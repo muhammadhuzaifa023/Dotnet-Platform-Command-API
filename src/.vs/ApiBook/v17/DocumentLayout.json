@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\Window Work\\Projects\\Notes\\.NET\\.NET Course for Architectures\\API Book .NET Project\\src\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{01F8624C-4ADF-4345-BD55-9E35A269416F}|ApiBook.Presentation\\ApiBook.Presentation.csproj|f:\\window work\\projects\\notes\\.net\\.net course for architectures\\api book .net project\\src\\apibook.presentation\\controllers\\platformscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01F8624C-4ADF-4345-BD55-9E35A269416F}|ApiBook.Presentation\\ApiBook.Presentation.csproj|solutionrelative:apibook.presentation\\controllers\\platformscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D938D0B8-C022-4977-9814-3B6D34CB56DA}|ApiBook.Application\\ApiBook.Application.csproj|f:\\window work\\projects\\notes\\.net\\.net course for architectures\\api book .net project\\src\\apibook.application\\services\\platformservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D938D0B8-C022-4977-9814-3B6D34CB56DA}|ApiBook.Application\\ApiBook.Application.csproj|solutionrelative:apibook.application\\services\\platformservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{058E04B5-BC89-4EE9-856A-63D69F6217F6}|ApiBook.Infrastructure\\ApiBook.Infrastructure.csproj|f:\\window work\\projects\\notes\\.net\\.net course for architectures\\api book .net project\\src\\apibook.infrastructure\\repositories\\platformrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{058E04B5-BC89-4EE9-856A-63D69F6217F6}|ApiBook.Infrastructure\\ApiBook.Infrastructure.csproj|solutionrelative:apibook.infrastructure\\repositories\\platformrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D938D0B8-C022-4977-9814-3B6D34CB56DA}|ApiBook.Application\\ApiBook.Application.csproj|f:\\window work\\projects\\notes\\.net\\.net course for architectures\\api book .net project\\src\\apibook.application\\contracts\\iplatformservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D938D0B8-C022-4977-9814-3B6D34CB56DA}|ApiBook.Application\\ApiBook.Application.csproj|solutionrelative:apibook.application\\contracts\\iplatformservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26AD5C6A-F471-424D-A110-D3A278FAABE8}|ApiBook.Api\\ApiBook.Api.csproj|f:\\window work\\projects\\notes\\.net\\.net course for architectures\\api book .net project\\src\\apibook.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{26AD5C6A-F471-424D-A110-D3A278FAABE8}|ApiBook.Api\\ApiBook.Api.csproj|solutionrelative:apibook.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlatformService.cs",
+              "DocumentMoniker": "F:\\Window Work\\Projects\\Notes\\.NET\\.NET Course for Architectures\\API Book .NET Project\\src\\ApiBook.Application\\Services\\PlatformService.cs",
+              "RelativeDocumentMoniker": "ApiBook.Application\\Services\\PlatformService.cs",
+              "ToolTip": "F:\\Window Work\\Projects\\Notes\\.NET\\.NET Course for Architectures\\API Book .NET Project\\src\\ApiBook.Application\\Services\\PlatformService.cs",
+              "RelativeToolTip": "ApiBook.Application\\Services\\PlatformService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T13:36:41.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlatformRepository.cs",
+              "DocumentMoniker": "F:\\Window Work\\Projects\\Notes\\.NET\\.NET Course for Architectures\\API Book .NET Project\\src\\ApiBook.Infrastructure\\Repositories\\PlatformRepository.cs",
+              "RelativeDocumentMoniker": "ApiBook.Infrastructure\\Repositories\\PlatformRepository.cs",
+              "ToolTip": "F:\\Window Work\\Projects\\Notes\\.NET\\.NET Course for Architectures\\API Book .NET Project\\src\\ApiBook.Infrastructure\\Repositories\\PlatformRepository.cs",
+              "RelativeToolTip": "ApiBook.Infrastructure\\Repositories\\PlatformRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAkwDYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T13:35:28.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IPlatformService.cs",
+              "DocumentMoniker": "F:\\Window Work\\Projects\\Notes\\.NET\\.NET Course for Architectures\\API Book .NET Project\\src\\ApiBook.Application\\Contracts\\IPlatformService.cs",
+              "RelativeDocumentMoniker": "ApiBook.Application\\Contracts\\IPlatformService.cs",
+              "ToolTip": "F:\\Window Work\\Projects\\Notes\\.NET\\.NET Course for Architectures\\API Book .NET Project\\src\\ApiBook.Application\\Contracts\\IPlatformService.cs",
+              "RelativeToolTip": "ApiBook.Application\\Contracts\\IPlatformService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T13:32:30.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlatformsController.cs",
+              "DocumentMoniker": "F:\\Window Work\\Projects\\Notes\\.NET\\.NET Course for Architectures\\API Book .NET Project\\src\\ApiBook.Presentation\\Controllers\\PlatformsController.cs",
+              "RelativeDocumentMoniker": "ApiBook.Presentation\\Controllers\\PlatformsController.cs",
+              "ToolTip": "F:\\Window Work\\Projects\\Notes\\.NET\\.NET Course for Architectures\\API Book .NET Project\\src\\ApiBook.Presentation\\Controllers\\PlatformsController.cs",
+              "RelativeToolTip": "ApiBook.Presentation\\Controllers\\PlatformsController.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAcwDQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T13:29:36.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\Window Work\\Projects\\Notes\\.NET\\.NET Course for Architectures\\API Book .NET Project\\src\\ApiBook.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "ApiBook.Api\\appsettings.json",
+              "ToolTip": "F:\\Window Work\\Projects\\Notes\\.NET\\.NET Course for Architectures\\API Book .NET Project\\src\\ApiBook.Api\\appsettings.json",
+              "RelativeToolTip": "ApiBook.Api\\appsettings.json",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-25T12:55:57.191Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
