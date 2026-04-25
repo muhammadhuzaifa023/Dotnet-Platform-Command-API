@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "sNscRV38NOA=",
+  "success": true,
+  "projectFilePath": "F:\\Window Work\\Projects\\Notes\\.NET\\.NET Course for Architectures\\API Book .NET Project\\src\\ApiBook.Security\\ApiBook.Security.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Yoga 370\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.10\\microsoft.extensions.configuration.abstractions.9.0.10.nupkg.sha512",
+    "C:\\Users\\Yoga 370\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.10\\microsoft.extensions.primitives.9.0.10.nupkg.sha512"
+  ],
+  "logs": []
+}

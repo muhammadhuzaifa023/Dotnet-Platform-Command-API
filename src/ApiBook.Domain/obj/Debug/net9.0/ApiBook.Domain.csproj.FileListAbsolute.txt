@@ -1,0 +1,11 @@
+F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Domain\bin\Debug\net9.0\ApiBook.Domain.deps.json
+F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Domain\bin\Debug\net9.0\ApiBook.Domain.dll
+F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Domain\bin\Debug\net9.0\ApiBook.Domain.pdb
+F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Domain\obj\Debug\net9.0\ApiBook.Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Domain\obj\Debug\net9.0\ApiBook.Domain.AssemblyInfoInputs.cache
+F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Domain\obj\Debug\net9.0\ApiBook.Domain.AssemblyInfo.cs
+F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Domain\obj\Debug\net9.0\ApiBook.Domain.csproj.CoreCompileInputs.cache
+F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Domain\obj\Debug\net9.0\ApiBook.Domain.dll
+F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Domain\obj\Debug\net9.0\refint\ApiBook.Domain.dll
+F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Domain\obj\Debug\net9.0\ApiBook.Domain.pdb
+F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Domain\obj\Debug\net9.0\ref\ApiBook.Domain.dll
