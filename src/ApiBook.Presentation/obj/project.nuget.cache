@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "NzWi7zTs8Ho=",
+  "dgSpecHash": "xxPrMDVr9U4=",
   "success": true,
   "projectFilePath": "F:\\Window Work\\Projects\\Notes\\.NET\\.NET Course for Architectures\\API Book .NET Project\\src\\ApiBook.Presentation\\ApiBook.Presentation.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Yoga 370\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

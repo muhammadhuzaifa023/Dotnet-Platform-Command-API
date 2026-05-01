@@ -15,42 +15,37 @@ public class PlatformRepository(AppDbContext dbContext) : IPlatformRepository
             .ToListAsync(cancellationToken);
     }
 
+    // 🔥 IMPORTANT: Tracking ON (no AsNoTracking)
     public async Task<Platform?> GetByIdAsync(int id, CancellationToken cancellationToken = default)
     {
         return await dbContext.Platforms
-            .AsNoTracking()
             .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
     }
 
-    // ✅ Nayi methods
+    // ✅ ADD (no SaveChanges)
     public async Task<Platform> AddAsync(Platform platform, CancellationToken cancellationToken = default)
     {
-        dbContext.Platforms.Add(platform);
-        await dbContext.SaveChangesAsync(cancellationToken);
+        await dbContext.Platforms.AddAsync(platform, cancellationToken);
         return platform;
     }
 
-    public async Task<bool> UpdateAsync(Platform platform, CancellationToken cancellationToken = default)
+    // ✅ UPDATE (Domain already updated in Service)
+    public Task<bool> UpdateAsync(Platform platform, CancellationToken cancellationToken = default)
     {
-        var existing = await dbContext.Platforms
-            .FirstOrDefaultAsync(x => x.Id == platform.Id, cancellationToken);
-        if (existing is null) return false;
-
-        existing.Name = platform.Name;
-        existing.Publisher = platform.Publisher;
-
-        await dbContext.SaveChangesAsync(cancellationToken);
-        return true;
+        // EF Core already tracking entity
+        return Task.FromResult(true);
     }
 
+    // ✅ DELETE (no SaveChanges)
     public async Task<bool> DeleteAsync(int id, CancellationToken cancellationToken = default)
     {
         var existing = await dbContext.Platforms
             .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
-        if (existing is null) return false;
+
+        if (existing is null)
+            return false;
 
         dbContext.Platforms.Remove(existing);
-        await dbContext.SaveChangesAsync(cancellationToken);
         return true;
     }
 }

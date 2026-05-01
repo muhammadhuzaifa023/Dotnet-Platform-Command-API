@@ -1,5 +1,7 @@
+﻿using ApiBook.Application.Common;
 using ApiBook.Application.Contracts;
 using ApiBook.Application.DTOs;
+using FluentValidation;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,42 +15,71 @@ public class PlatformsController(IPlatformService platformService) : ControllerB
     public async Task<IActionResult> GetAll(CancellationToken cancellationToken)
     {
         var platforms = await platformService.GetAllAsync(cancellationToken);
-        return Ok(platforms);
+
+        return Ok(ApiResponse<object>.SuccessResponse(platforms, Messages.Fetched));
     }
 
     [HttpGet("{id:int}")]
     public async Task<IActionResult> GetById(int id, CancellationToken cancellationToken)
     {
         var platform = await platformService.GetByIdAsync(id, cancellationToken);
-        return platform is null ? NotFound() : Ok(platform);
+
+        if (platform is null)
+            return NotFound(ApiResponse<string>.Fail(Messages.NotFound));
+
+        return Ok(ApiResponse<object>.SuccessResponse(platform, Messages.Fetched));
     }
 
+    // 🔥 CREATE
     [Authorize]
     [HttpPost]
     public async Task<IActionResult> Create(
         [FromBody] PlatformCreateDto request,
+        [FromServices] IValidator<PlatformCreateDto> validator,
         CancellationToken cancellationToken)
     {
+        var result = await validator.ValidateAsync(request, cancellationToken);
+
+        if (!result.IsValid)
+            return BadRequest(ApiResponse<object>.Fail("Validation failed"));
+
         var created = await platformService.CreateAsync(request, cancellationToken);
-        return CreatedAtAction(nameof(GetById), new { id = created!.Id }, created);
+
+        return Ok(ApiResponse<object>.SuccessResponse(created, Messages.Created));
     }
 
+    // 🔥 UPDATE
     [Authorize]
     [HttpPut("{id:int}")]
     public async Task<IActionResult> Update(
         int id,
         [FromBody] PlatformUpdateDto request,
+        [FromServices] IValidator<PlatformUpdateDto> validator,
         CancellationToken cancellationToken)
     {
+        var result = await validator.ValidateAsync(request, cancellationToken);
+
+        if (!result.IsValid)
+            return BadRequest(ApiResponse<object>.Fail("Validation failed"));
+
         var updated = await platformService.UpdateAsync(id, request, cancellationToken);
-        return updated ? NoContent() : NotFound();
+
+        if (!updated)
+            return NotFound(ApiResponse<string>.Fail(Messages.NotFound));
+
+        return Ok(ApiResponse<string>.SuccessResponse(null!, Messages.Updated));
     }
 
+    // 🔥 DELETE
     [Authorize]
     [HttpDelete("{id:int}")]
     public async Task<IActionResult> Delete(int id, CancellationToken cancellationToken)
     {
         var deleted = await platformService.DeleteAsync(id, cancellationToken);
-        return deleted ? NoContent() : NotFound();
+
+        if (!deleted)
+            return NotFound(ApiResponse<string>.Fail(Messages.NotFound));
+
+        return Ok(ApiResponse<string>.SuccessResponse(null!, Messages.Deleted));
     }
 }

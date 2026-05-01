@@ -1,4 +1,4 @@
-using ApiBook.Application.Contracts;
+﻿using ApiBook.Application.Contracts;
 using ApiBook.Domain.Entities;
 using ApiBook.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
@@ -24,45 +24,35 @@ public class CommandRepository(AppDbContext dbContext) : ICommandRepository
             .ToListAsync(cancellationToken);
     }
 
+    // 🔥 IMPORTANT: Tracking ON (no AsNoTracking)
     public async Task<Command?> GetByIdAsync(int id, CancellationToken cancellationToken = default)
     {
         return await dbContext.Commands
-            .AsNoTracking()
             .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
     }
 
+    // ✅ ADD only (no SaveChanges)
     public async Task<Command> AddAsync(Command command, CancellationToken cancellationToken = default)
     {
-        dbContext.Commands.Add(command);
-        await dbContext.SaveChangesAsync(cancellationToken);
+        await dbContext.Commands.AddAsync(command, cancellationToken);
         return command;
     }
 
-    public async Task<bool> UpdateAsync(Command command, CancellationToken cancellationToken = default)
+    // ✅ UPDATE: Domain already updated in Service
+    public Task<bool> UpdateAsync(Command command, CancellationToken cancellationToken = default)
     {
-        var existing = await dbContext.Commands.FirstOrDefaultAsync(x => x.Id == command.Id, cancellationToken);
-        if (existing is null)
-        {
-            return false;
-        }
-
-        existing.HowTo = command.HowTo;
-        existing.CommandLine = command.CommandLine;
-        existing.PlatformId = command.PlatformId;
-        await dbContext.SaveChangesAsync(cancellationToken);
-        return true;
+        // EF Core already tracking entity
+        return Task.FromResult(true);
     }
 
+    // ✅ DELETE: only remove (no SaveChanges)
     public async Task<bool> DeleteAsync(int id, CancellationToken cancellationToken = default)
     {
         var existing = await dbContext.Commands.FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
         if (existing is null)
-        {
             return false;
-        }
 
         dbContext.Commands.Remove(existing);
-        await dbContext.SaveChangesAsync(cancellationToken);
         return true;
     }
 }

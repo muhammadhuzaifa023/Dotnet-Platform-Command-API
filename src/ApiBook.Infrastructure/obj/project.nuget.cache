@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "cNAD1NIlTQg=",
+  "dgSpecHash": "emy576NaO/k=",
   "success": true,
   "projectFilePath": "F:\\Window Work\\Projects\\Notes\\.NET\\.NET Course for Architectures\\API Book .NET Project\\src\\ApiBook.Infrastructure\\ApiBook.Infrastructure.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Yoga 370\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",
     "C:\\Users\\Yoga 370\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Yoga 370\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\Yoga 370\\.nuget\\packages\\microsoft.build.framework\\17.8.3\\microsoft.build.framework.17.8.3.nupkg.sha512",

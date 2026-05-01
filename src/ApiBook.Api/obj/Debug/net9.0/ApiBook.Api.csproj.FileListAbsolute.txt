@@ -1,14 +1,16 @@
 F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api\bin\Debug\net9.0\appsettings.Development.json
 F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api\bin\Debug\net9.0\appsettings.json
+F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api\bin\Debug\net9.0\appsettings.Production.json
 F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api\bin\Debug\net9.0\ApiBook.Api.staticwebassets.endpoints.json
 F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api\bin\Debug\net9.0\ApiBook.Api.exe
 F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api\bin\Debug\net9.0\ApiBook.Api.deps.json
 F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api\bin\Debug\net9.0\ApiBook.Api.runtimeconfig.json
 F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api\bin\Debug\net9.0\ApiBook.Api.dll
 F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api\bin\Debug\net9.0\ApiBook.Api.pdb
+F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api\bin\Debug\net9.0\FluentValidation.dll
+F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api\bin\Debug\net9.0\FluentValidation.DependencyInjectionExtensions.dll
 F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api\bin\Debug\net9.0\Humanizer.dll
 F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
 F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
 F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api\bin\Debug\net9.0\Microsoft.Build.Locator.dll
 F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
@@ -57,6 +59,9 @@ F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET P
 F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api\bin\Debug\net9.0\Serilog.Sinks.Console.dll
 F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api\bin\Debug\net9.0\Serilog.Sinks.Debug.dll
 F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api\bin\Debug\net9.0\Serilog.Sinks.File.dll
+F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api\bin\Debug\net9.0\System.CodeDom.dll
 F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api\bin\Debug\net9.0\System.Composition.AttributedModel.dll
 F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api\bin\Debug\net9.0\System.Composition.Convention.dll
@@ -64,7 +69,6 @@ F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET P
 F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api\bin\Debug\net9.0\System.Composition.Runtime.dll
 F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api\bin\Debug\net9.0\System.Composition.TypedParts.dll
 F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
-F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api\bin\Debug\net9.0\System.Text.Json.dll
 F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
 F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
 F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
