@@ -32,6 +32,7 @@ public static class DependencyInjection
 
         services.AddScoped<IPlatformRepository, PlatformRepository>();
         services.AddScoped<ICommandRepository, CommandRepository>();
+        services.AddScoped<IUnitOfWork, UnitOfWork>();
         services.AddSingleton<IApiKeyValidator, ConfigurationApiKeyValidator>();
         services.AddSingleton<IJwtTokenService, JwtTokenService>();
         return services;
