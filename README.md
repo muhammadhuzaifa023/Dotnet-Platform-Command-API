@@ -552,6 +552,9 @@ CREATE TABLE commands (
 | `ASPNETCORE_ENVIRONMENT` | Optional | `Development` / `Production` |
 
 ---
+## 🏛 Architecture Diagram
+
+![Deployment Diagram](images/Deployment%20Diagram%20of%20API%20Book%20Project.png)
 
 ## 🚀 Getting Started
 
