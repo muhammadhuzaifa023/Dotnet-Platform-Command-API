@@ -1,72 +1,62 @@
 name: Deploy to IIS
-
 on:
   push:
     branches:
       - main
-
 jobs:
   build-and-deploy:
     runs-on: self-hosted
-
     steps:
-    - name: Checkout Code
-      uses: actions/checkout@v3
+      - name: Checkout Code
+        uses: actions/checkout@v4
 
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: '9.0.x'
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9.0.x'
 
-    - name: Restore
-      run: dotnet restore src/ApiBook.sln
+      - name: Restore
+        run: dotnet restore src/ApiBook.sln
 
-    - name: Build
-      run: dotnet build src/ApiBook.sln --configuration Release
+      - name: Build
+        run: dotnet build src/ApiBook.sln --configuration Release
 
-    - name: Publish
-      run: dotnet publish src/ApiBook.Api -c Release -o publish
+      - name: Publish
+        run: dotnet publish src/ApiBook.Api -c Release -o publish
 
-    # 🛑 Stop IIS
-    - name: Stop IIS Site
-      run: powershell Stop-WebSite -Name "ApiBook"
+      - name: Stop IIS Site
+        shell: powershell
+        run: Stop-WebSite -Name "ApiBook"
 
-    # 🧱 App Offline
-    - name: Enable App Offline
-      run: echo "offline" > C:\inetpub\ApiBook\app_offline.htm
+      - name: Enable App Offline
+        shell: powershell
+        run: Set-Content "C:\inetpub\ApiBook\app_offline.htm" "offline"
 
-    # 📂 Copy Files
-    - name: Copy Files
-      run: |
-        robocopy publish C:\inetpub\ApiBook /E /NFL /NDL /NJH /NJS /NC /NS
-        exit 0
+      - name: Copy Files
+        shell: powershell
+        run: |
+          robocopy publish C:\inetpub\ApiBook /E /NFL /NDL /NJH /NJS /NC /NS
+          exit 0
 
-    # 🔥 SIMPLE & STABLE WEB.CONFIG FIX
-    - name: Update web.config (Environment + Logs)
-      shell: powershell
-      run: |
-        $path = "C:\inetpub\ApiBook\web.config"
+      - name: Fix web.config
+        shell: powershell
+        run: |
+          $xml = '<?xml version="1.0" encoding="utf-8"?><configuration><location path="." inheritInChildApplications="false"><system.webServer><handlers><add name="aspNetCore" path="*" verb="*" modules="AspNetCoreModuleV2" resourceType="Unspecified" /></handlers><aspNetCore processPath="dotnet" arguments=".\ApiBook.Api.dll" stdoutLogEnabled="true" stdoutLogFile=".\logs\stdout" hostingModel="inprocess"><environmentVariables><environmentVariable name="ASPNETCORE_ENVIRONMENT" value="Development" /></environmentVariables></aspNetCore></system.webServer></location></configuration>'
+          [xml]$doc = $xml
+          $settings = New-Object System.Xml.XmlWriterSettings
+          $settings.Indent = $true
+          $settings.Encoding = [System.Text.Encoding]::UTF8
+          $writer = [System.Xml.XmlWriter]::Create("C:\inetpub\ApiBook\web.config", $settings)
+          $doc.Save($writer)
+          $writer.Close()
 
-        $content = Get-Content $path -Raw
+      - name: Remove App Offline
+        shell: powershell
+        run: |
+          if (Test-Path "C:\inetpub\ApiBook\app_offline.htm") {
+            Remove-Item "C:\inetpub\ApiBook\app_offline.htm"
+          }
 
-        # Enable logs
-        $content = $content -replace 'stdoutLogEnabled="false"', 'stdoutLogEnabled="true"'
-
-        # Add environment variable (only if not already present)
-        if ($content -notmatch "ASPNETCORE_ENVIRONMENT") {
-          $content = $content -replace '</aspNetCore>', '<environmentVariables><environmentVariable name="ASPNETCORE_ENVIRONMENT" value="Development" /></environmentVariables></aspNetCore>'
-        }
-
-        Set-Content $path $content
-
-    # 🧹 Remove Offline File
-    - name: Remove App Offline
-      shell: powershell
-      run: |
-        if (Test-Path "C:\inetpub\ApiBook\app_offline.htm") {
-          Remove-Item "C:\inetpub\ApiBook\app_offline.htm"
-        }
-
-    # ▶ Start IIS
-    - name: Start IIS Site
-      run: powershell Start-WebSite -Name "ApiBook"
+      - name: Start IIS Site
+        shell: powershell
+        run: Start-WebSite -Name "ApiBook"
