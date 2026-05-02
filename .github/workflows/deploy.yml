@@ -41,40 +41,40 @@ jobs:
         robocopy publish C:\inetpub\ApiBook /E /NFL /NDL /NJH /NJS /NC /NS
         exit 0
 
-    # 🔥 UPDATE WEB.CONFIG (IMPORTANT STEP)
+    # 🔥 FIXED WEB.CONFIG STEP (NO QUOTING ISSUE)
     - name: Update web.config (Environment + Logs)
+      shell: powershell
       run: |
-        powershell -Command "
-        [xml]$xml = Get-Content 'C:\inetpub\ApiBook\web.config';
+        [xml]$xml = Get-Content "C:\inetpub\ApiBook\web.config"
 
-        $asp = $xml.configuration.location.'system.webServer'.aspNetCore;
+        $asp = $xml.configuration.location.'system.webServer'.aspNetCore
 
         # Enable logs
-        $asp.stdoutLogEnabled = 'true';
+        $asp.stdoutLogEnabled = "true"
 
-        # Create env section if not exists
+        # Ensure environmentVariables exists
         if (-not $asp.environmentVariables) {
-            $envVars = $xml.CreateElement('environmentVariables');
-            $asp.AppendChild($envVars) | Out-Null;
+            $envVars = $xml.CreateElement("environmentVariables")
+            $asp.AppendChild($envVars) | Out-Null
         }
 
-        # Remove existing variable
-        $existing = $asp.environmentVariables.environmentVariable | Where-Object { $_.name -eq 'ASPNETCORE_ENVIRONMENT' };
+        # Remove existing env variable
+        $existing = $asp.environmentVariables.environmentVariable | Where-Object { $_.name -eq "ASPNETCORE_ENVIRONMENT" }
         if ($existing) {
-            $asp.environmentVariables.RemoveChild($existing) | Out-Null;
+            $asp.environmentVariables.RemoveChild($existing) | Out-Null
         }
 
         # Add Development env
-        $env = $xml.CreateElement('environmentVariable');
-        $env.SetAttribute('name', 'ASPNETCORE_ENVIRONMENT');
-        $env.SetAttribute('value', 'Development');
-        $asp.environmentVariables.AppendChild($env) | Out-Null;
+        $env = $xml.CreateElement("environmentVariable")
+        $env.SetAttribute("name", "ASPNETCORE_ENVIRONMENT")
+        $env.SetAttribute("value", "Development")
+        $asp.environmentVariables.AppendChild($env) | Out-Null
 
-        $xml.Save('C:\inetpub\ApiBook\web.config');
-        "
+        $xml.Save("C:\inetpub\ApiBook\web.config")
 
     # 🧹 Remove Offline File
     - name: Remove App Offline
+      shell: powershell
       run: |
         if (Test-Path "C:\inetpub\ApiBook\app_offline.htm") {
           Remove-Item "C:\inetpub\ApiBook\app_offline.htm"
