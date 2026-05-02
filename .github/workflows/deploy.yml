@@ -41,36 +41,23 @@ jobs:
         robocopy publish C:\inetpub\ApiBook /E /NFL /NDL /NJH /NJS /NC /NS
         exit 0
 
-    # 🔥 FIXED WEB.CONFIG STEP (NO QUOTING ISSUE)
+    # 🔥 SIMPLE & STABLE WEB.CONFIG FIX
     - name: Update web.config (Environment + Logs)
       shell: powershell
       run: |
-        [xml]$xml = Get-Content "C:\inetpub\ApiBook\web.config"
+        $path = "C:\inetpub\ApiBook\web.config"
 
-        $asp = $xml.configuration.location.'system.webServer'.aspNetCore
+        $content = Get-Content $path -Raw
 
         # Enable logs
-        $asp.stdoutLogEnabled = "true"
+        $content = $content -replace 'stdoutLogEnabled="false"', 'stdoutLogEnabled="true"'
 
-        # Ensure environmentVariables exists
-        if (-not $asp.environmentVariables) {
-            $envVars = $xml.CreateElement("environmentVariables")
-            $asp.AppendChild($envVars) | Out-Null
+        # Add environment variable (only if not already present)
+        if ($content -notmatch "ASPNETCORE_ENVIRONMENT") {
+          $content = $content -replace '</aspNetCore>', '<environmentVariables><environmentVariable name="ASPNETCORE_ENVIRONMENT" value="Development" /></environmentVariables></aspNetCore>'
         }
 
-        # Remove existing env variable
-        $existing = $asp.environmentVariables.environmentVariable | Where-Object { $_.name -eq "ASPNETCORE_ENVIRONMENT" }
-        if ($existing) {
-            $asp.environmentVariables.RemoveChild($existing) | Out-Null
-        }
-
-        # Add Development env
-        $env = $xml.CreateElement("environmentVariable")
-        $env.SetAttribute("name", "ASPNETCORE_ENVIRONMENT")
-        $env.SetAttribute("value", "Development")
-        $asp.environmentVariables.AppendChild($env) | Out-Null
-
-        $xml.Save("C:\inetpub\ApiBook\web.config")
+        Set-Content $path $content
 
     # 🧹 Remove Offline File
     - name: Remove App Offline
