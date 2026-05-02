@@ -9,6 +9,7 @@ using ApiBook.Application.Validators;
 using FluentValidation;
 using Microsoft.OpenApi.Models;
 using Microsoft.OpenApi;
+using ApiBook.Api.Middleware.Security;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -88,7 +89,11 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         };
     });
 builder.Services.AddAuthorization();
-
+// Builder ke baad, var app se PEHLE
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.AddServerHeader = false; // ← Server header hatao
+});
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -97,7 +102,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseSecurityHeaders();
 app.UseStructuredRequestLogging();
 app.UseMiddleware<ExceptionMiddleware>();
 app.UseMiddleware<PerformanceMiddleware>();

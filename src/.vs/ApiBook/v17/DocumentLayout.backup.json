@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{26AD5C6A-F471-424D-A110-D3A278FAABE8}|ApiBook.Api\\ApiBook.Api.csproj|solutionrelative:apibook.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{26AD5C6A-F471-424D-A110-D3A278FAABE8}|ApiBook.Api\\ApiBook.Api.csproj|f:\\window work\\projects\\notes\\.net\\.net course for architectures\\api book .net project\\src\\apibook.api\\middleware\\security\\securityheadersmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26AD5C6A-F471-424D-A110-D3A278FAABE8}|ApiBook.Api\\ApiBook.Api.csproj|solutionrelative:apibook.api\\middleware\\security\\securityheadersmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26AD5C6A-F471-424D-A110-D3A278FAABE8}|ApiBook.Api\\ApiBook.Api.csproj|f:\\window work\\projects\\notes\\.net\\.net course for architectures\\api book .net project\\src\\apibook.api\\middleware\\security\\securityheadersextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26AD5C6A-F471-424D-A110-D3A278FAABE8}|ApiBook.Api\\ApiBook.Api.csproj|solutionrelative:apibook.api\\middleware\\security\\securityheadersextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{26AD5C6A-F471-424D-A110-D3A278FAABE8}|ApiBook.Api\\ApiBook.Api.csproj|f:\\window work\\projects\\notes\\.net\\.net course for architectures\\api book .net project\\src\\apibook.api\\middleware\\performancemiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26AD5C6A-F471-424D-A110-D3A278FAABE8}|ApiBook.Api\\ApiBook.Api.csproj|solutionrelative:apibook.api\\middleware\\performancemiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -22,11 +30,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SecurityHeadersExtensions.cs",
+              "DocumentMoniker": "F:\\Window Work\\Projects\\Notes\\.NET\\.NET Course for Architectures\\API Book .NET Project\\src\\ApiBook.Api\\Middleware\\Security\\SecurityHeadersExtensions.cs",
+              "RelativeDocumentMoniker": "ApiBook.Api\\Middleware\\Security\\SecurityHeadersExtensions.cs",
+              "ToolTip": "F:\\Window Work\\Projects\\Notes\\.NET\\.NET Course for Architectures\\API Book .NET Project\\src\\ApiBook.Api\\Middleware\\Security\\SecurityHeadersExtensions.cs",
+              "RelativeToolTip": "ApiBook.Api\\Middleware\\Security\\SecurityHeadersExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T21:52:00.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SecurityHeadersMiddleware.cs",
+              "DocumentMoniker": "F:\\Window Work\\Projects\\Notes\\.NET\\.NET Course for Architectures\\API Book .NET Project\\src\\ApiBook.Api\\Middleware\\Security\\SecurityHeadersMiddleware.cs",
+              "RelativeDocumentMoniker": "ApiBook.Api\\Middleware\\Security\\SecurityHeadersMiddleware.cs",
+              "ToolTip": "F:\\Window Work\\Projects\\Notes\\.NET\\.NET Course for Architectures\\API Book .NET Project\\src\\ApiBook.Api\\Middleware\\Security\\SecurityHeadersMiddleware.cs",
+              "RelativeToolTip": "ApiBook.Api\\Middleware\\Security\\SecurityHeadersMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T21:50:16.518Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -36,14 +70,14 @@
               "RelativeDocumentMoniker": "ApiBook.Api\\Program.cs",
               "ToolTip": "F:\\Window Work\\Projects\\Notes\\.NET\\.NET Course for Architectures\\API Book .NET Project\\src\\ApiBook.Api\\Program.cs",
               "RelativeToolTip": "ApiBook.Api\\Program.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGYAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAqwGgAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-02T21:10:50.385Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "PerformanceMiddleware.cs",
               "DocumentMoniker": "F:\\Window Work\\Projects\\Notes\\.NET\\.NET Course for Architectures\\API Book .NET Project\\src\\ApiBook.Api\\Middleware\\PerformanceMiddleware.cs",
               "RelativeDocumentMoniker": "ApiBook.Api\\Middleware\\PerformanceMiddleware.cs",
@@ -51,12 +85,11 @@
               "RelativeToolTip": "ApiBook.Api\\Middleware\\PerformanceMiddleware.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAA1wCIAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T21:09:55.34Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-02T21:09:55.34Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ExceptionMiddleware.cs",
               "DocumentMoniker": "F:\\Window Work\\Projects\\Notes\\.NET\\.NET Course for Architectures\\API Book .NET Project\\src\\ApiBook.Api\\Middleware\\ExceptionMiddleware.cs",
               "RelativeDocumentMoniker": "ApiBook.Api\\Middleware\\ExceptionMiddleware.cs",
@@ -64,8 +97,7 @@
               "RelativeToolTip": "ApiBook.Api\\Middleware\\ExceptionMiddleware.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T21:08:57.315Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-02T21:08:57.315Z"
             }
           ]
         }

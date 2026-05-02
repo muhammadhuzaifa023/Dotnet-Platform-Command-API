@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UcXuRG3X+8s=",
+  "dgSpecHash": "4J52oTASQVM=",
   "success": true,
   "projectFilePath": "F:\\Window Work\\Projects\\Notes\\.NET\\.NET Course for Architectures\\API Book .NET Project\\src\\ApiBook.Logging\\ApiBook.Logging.csproj",
   "expectedPackageFiles": [
@@ -24,7 +24,8 @@
     "C:\\Users\\Yoga 370\\.nuget\\packages\\serilog.settings.configuration\\9.0.0\\serilog.settings.configuration.9.0.0.nupkg.sha512",
     "C:\\Users\\Yoga 370\\.nuget\\packages\\serilog.sinks.console\\6.1.1\\serilog.sinks.console.6.1.1.nupkg.sha512",
     "C:\\Users\\Yoga 370\\.nuget\\packages\\serilog.sinks.debug\\3.0.0\\serilog.sinks.debug.3.0.0.nupkg.sha512",
-    "C:\\Users\\Yoga 370\\.nuget\\packages\\serilog.sinks.file\\7.0.0\\serilog.sinks.file.7.0.0.nupkg.sha512"
+    "C:\\Users\\Yoga 370\\.nuget\\packages\\serilog.sinks.file\\7.0.0\\serilog.sinks.file.7.0.0.nupkg.sha512",
+    "C:\\Users\\Yoga 370\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.313\\microsoft.net.sdk.compilers.toolset.9.0.313.nupkg.sha512"
   ],
   "logs": []
 }
