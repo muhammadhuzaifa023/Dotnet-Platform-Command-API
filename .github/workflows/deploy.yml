@@ -27,11 +27,22 @@ jobs:
     - name: Publish
       run: dotnet publish src/ApiBook.Api -c Release -o publish
 
+    # 🛑 Stop IIS
     - name: Stop IIS Site
       run: powershell Stop-WebSite -Name "ApiBook"
 
-    - name: Copy Files
-      run: xcopy /E /Y publish\* C:\inetpub\wwwroot\ApiBook\
+    # 🧱 App Offline (important)
+    - name: Enable App Offline
+      run: echo "offline" > C:\inetpub\ApiBook\app_offline.htm
 
+    # 📂 Copy Files
+    - name: Copy Files
+      run: xcopy /E /Y publish\* C:\inetpub\ApiBook\
+
+    # 🧹 Remove Offline File
+    - name: Remove App Offline
+      run: del C:\inetpub\ApiBook\app_offline.htm
+
+    # ▶ Start IIS
     - name: Start IIS Site
       run: powershell Start-WebSite -Name "ApiBook"
