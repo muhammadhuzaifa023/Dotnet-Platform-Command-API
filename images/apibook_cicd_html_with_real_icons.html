@@ -1,0 +1,241 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:sans-serif;}
+.page{padding:18px;background:transparent;}
+.title{font-size:15px;font-weight:500;color:var(--color-text-primary);text-align:center;margin-bottom:16px;letter-spacing:.3px;}
+
+.zone{border-radius:12px;padding:14px 16px;margin-bottom:12px;position:relative;}
+.zone-label{font-size:11px;font-weight:500;letter-spacing:.5px;margin-bottom:10px;display:flex;align-items:center;gap:7px;}
+
+.dev-zone{border:1.5px solid #1D9E75;background:#f0fdf6;}
+.dev-label{color:#085041;}
+.gh-zone{border:1.5px solid #444441;background:#f8f8f6;}
+.gh-label{color:#2C2C2A;}
+.actions-zone{border:2px solid #BA7517;background:#fffbf0;}
+.actions-label{color:#633806;}
+.iis-zone{border:2px solid #185FA5;background:#f0f7ff;}
+.iis-label{color:#042C53;}
+
+.row{display:flex;align-items:flex-start;gap:10px;flex-wrap:wrap;}
+.row-center{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+
+.node{background:#fff;border-radius:10px;padding:8px 10px;display:flex;flex-direction:column;align-items:center;gap:4px;min-width:90px;border:1px solid #ddd;text-align:center;flex:0 0 auto;}
+.node-title{font-size:10px;font-weight:500;color:var(--color-text-primary);line-height:1.3;}
+.node-sub{font-size:9px;color:var(--color-text-secondary);line-height:1.3;}
+
+.badge{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:50%;font-size:9px;font-weight:500;color:#fff;flex-shrink:0;}
+
+.arrow-right{display:flex;align-items:center;color:var(--color-text-secondary);font-size:16px;align-self:center;flex-shrink:0;}
+.arrow-down{text-align:center;font-size:18px;color:var(--color-text-secondary);margin:4px 0;}
+.arrow-label{font-size:10px;color:var(--color-text-secondary);text-align:center;}
+
+.deploy-arrow{display:flex;flex-direction:column;align-items:center;margin:6px 0;}
+.deploy-line{width:3px;height:28px;background:#107C10;border-radius:2px;}
+.deploy-head{width:0;height:0;border-left:7px solid transparent;border-right:7px solid transparent;border-top:10px solid #107C10;}
+.deploy-text{font-size:11px;font-weight:500;color:#107C10;margin-bottom:2px;}
+
+.step-blue{background:#E6F1FB;border-color:#378ADD;}
+.step-purple{background:#EEEDFE;border-color:#7F77DD;}
+.step-red{background:#FCEBEB;border-color:#E24B4A;}
+.step-green{background:#EAF3DE;border-color:#639922;}
+.step-amber{background:#FAEEDA;border-color:#BA7517;}
+
+.iis-node{background:#fff;border-radius:10px;padding:9px 11px;display:flex;flex-direction:column;align-items:center;gap:5px;border:1px solid #B5D4F4;text-align:center;min-width:100px;flex:1;}
+.iis-title{font-size:10px;font-weight:500;color:#0C447C;}
+.iis-sub{font-size:9px;color:#185FA5;}
+
+.section-sep{width:100%;height:1px;background:var(--color-border-tertiary);margin:8px 0;}
+
+@media (prefers-reduced-motion: no-preference) {
+  .pulse{animation:pulse 2s ease-in-out infinite;}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.6}}
+}
+</style>
+
+<div class="page">
+<div class="title">ApiBook — CI/CD deployment infrastructure</div>
+
+<div style="display:flex;gap:10px;margin-bottom:12px;flex-wrap:wrap;">
+
+  <div class="zone dev-zone" style="flex:1;min-width:200px;">
+    <div class="zone-label dev-label">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#085041" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+      Developer machine
+    </div>
+    <div class="row-center">
+      <div class="node" style="border-color:#1D9E75;background:#f0fdf6;">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#085041" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><polyline points="8,21 12,17 16,21"/><line x1="2" y1="17" x2="22" y2="17"/></svg>
+        <div class="node-title">Developer</div>
+        <div class="node-sub">VS Code</div>
+      </div>
+      <div class="arrow-right">→</div>
+      <div style="text-align:center;">
+        <div class="node-sub" style="font-size:9px;color:#085041;font-weight:500;padding:4px 8px;background:#d1fae5;border-radius:6px;border:1px solid #1D9E75;">git push origin main</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="zone gh-zone" style="flex:1;min-width:260px;">
+    <div class="zone-label gh-label">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="#2C2C2A"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+      GitHub
+    </div>
+    <div class="row-center">
+      <div class="node" style="border-color:#444;background:#f8f8f6;">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="#1B1F24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        <div class="node-title">Repository</div>
+        <div class="node-sub">main branch</div>
+      </div>
+      <div class="arrow-right">→</div>
+      <div class="node" style="border-color:#444;background:#f8f8f6;">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2C2C2A" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        <div class="node-title">deploy.yml</div>
+        <div class="node-sub">.github/workflows</div>
+      </div>
+      <div class="arrow-right">→</div>
+      <div class="node" style="border-color:#BA7517;background:#fffbf0;">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#854F0B" stroke-width="1.5"><polygon points="13,2 3,14 12,14 11,22 21,10 12,10"/></svg>
+        <div class="node-title">on: push → main</div>
+        <div class="node-sub">workflow trigger</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="zone actions-zone">
+  <div class="zone-label actions-label">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#854F0B" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16"/></svg>
+    GitHub Actions — self-hosted runner (Windows)
+  </div>
+
+  <div class="row" style="gap:6px;margin-bottom:8px;">
+    <div class="node step-blue" style="min-width:80px;">
+      <div class="badge" style="background:#378ADD;">1</div>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#185FA5" stroke-width="1.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17,8 12,3 7,8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+      <div class="node-title">Checkout</div>
+      <div class="node-sub">actions/checkout</div>
+    </div>
+    <div class="arrow-right" style="align-self:center;">→</div>
+    <div class="node step-purple" style="min-width:80px;">
+      <div class="badge" style="background:#7F77DD;">2</div>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#534AB7" stroke-width="1.5"><polyline points="16,18 22,12 16,6"/><polyline points="8,6 2,12 8,18"/></svg>
+      <div class="node-title">Setup .NET 9</div>
+      <div class="node-sub">setup-dotnet@v4</div>
+    </div>
+    <div class="arrow-right" style="align-self:center;">→</div>
+    <div class="node step-blue" style="min-width:80px;">
+      <div class="badge" style="background:#378ADD;">3</div>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#185FA5" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+      <div class="node-title">dotnet restore</div>
+      <div class="node-sub">NuGet packages</div>
+    </div>
+    <div class="arrow-right" style="align-self:center;">→</div>
+    <div class="node step-blue" style="min-width:80px;">
+      <div class="badge" style="background:#378ADD;">4</div>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#185FA5" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+      <div class="node-title">dotnet build</div>
+      <div class="node-sub">Release config</div>
+    </div>
+    <div class="arrow-right" style="align-self:center;">→</div>
+    <div class="node step-purple" style="min-width:80px;">
+      <div class="badge" style="background:#7F77DD;">5</div>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#534AB7" stroke-width="1.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      <div class="node-title">dotnet publish</div>
+      <div class="node-sub">→ /publish</div>
+    </div>
+  </div>
+
+  <div class="section-sep"></div>
+
+  <div class="row" style="gap:6px;">
+    <div class="node step-red" style="min-width:80px;">
+      <div class="badge" style="background:#E24B4A;">6</div>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A32D2D" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><line x1="9" y1="10" x2="15" y2="10"/></svg>
+      <div class="node-title">Stop IIS</div>
+      <div class="node-sub">Stop-WebSite</div>
+    </div>
+    <div class="arrow-right" style="align-self:center;">→</div>
+    <div class="node step-amber" style="min-width:80px;">
+      <div class="badge" style="background:#BA7517;">7</div>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#854F0B" stroke-width="1.5"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
+      <div class="node-title">robocopy</div>
+      <div class="node-sub">C:\inetpub\ApiBook</div>
+    </div>
+    <div class="arrow-right" style="align-self:center;">→</div>
+    <div class="node step-amber" style="min-width:80px;">
+      <div class="badge" style="background:#BA7517;">8</div>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#854F0B" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+      <div class="node-title">Fix web.config</div>
+      <div class="node-sub">Set-Content UTF8</div>
+    </div>
+    <div class="arrow-right" style="align-self:center;">→</div>
+    <div class="node step-green" style="min-width:80px;">
+      <div class="badge" style="background:#639922;">9</div>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3B6D11" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><polyline points="9,10 11,12 15,8"/></svg>
+      <div class="node-title">Start IIS</div>
+      <div class="node-sub">Start-WebSite live</div>
+    </div>
+  </div>
+</div>
+
+<div class="deploy-arrow">
+  <div class="deploy-text pulse">DEPLOY</div>
+  <div class="deploy-line"></div>
+  <div class="deploy-head"></div>
+</div>
+
+<div class="zone iis-zone">
+  <div class="zone-label iis-label">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#042C53" stroke-width="2"><rect x="2" y="3" width="20" height="7" rx="1"/><rect x="2" y="14" width="20" height="7" rx="1"/><line x1="6" y1="7" x2="6" y2="7"/><line x1="6" y1="18" x2="6" y2="18"/></svg>
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="#0078D4"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+    Local Windows server — IIS
+  </div>
+
+  <div class="row" style="gap:8px;margin-bottom:10px;">
+    <div class="iis-node">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#185FA5" stroke-width="1.5"><rect x="2" y="3" width="20" height="7" rx="1"/><rect x="2" y="14" width="20" height="7" rx="1"/><circle cx="6" cy="6.5" r="1" fill="#639922"/><circle cx="6" cy="17.5" r="1" fill="#639922"/></svg>
+      <div class="iis-title">IIS site: ApiBook</div>
+      <div class="iis-sub">Port 80 / HTTPS</div>
+    </div>
+    <div class="arrow-right" style="color:#185FA5;align-self:center;">→</div>
+    <div class="iis-node">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#185FA5" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+      <div class="iis-title">web.config</div>
+      <div class="iis-sub">AspNetCoreModuleV2</div>
+    </div>
+    <div class="arrow-right" style="color:#185FA5;align-self:center;">→</div>
+    <div class="iis-node">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#534AB7" stroke-width="1.5"><polyline points="16,18 22,12 16,6"/><polyline points="8,6 2,12 8,18"/></svg>
+      <div class="iis-title">ApiBook.Api.dll</div>
+      <div class="iis-sub">.NET 9 inprocess</div>
+    </div>
+    <div class="arrow-right" style="color:#185FA5;align-self:center;">→</div>
+    <div class="iis-node">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#185FA5" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      <div class="iis-title">JWT + API Key</div>
+      <div class="iis-sub">auth middleware</div>
+    </div>
+  </div>
+
+  <div style="border-top:1px dashed #B5D4F4;padding-top:10px;">
+    <div class="row" style="gap:8px;">
+      <div class="iis-node">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#336791" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+        <div class="iis-title">PostgreSQL</div>
+        <div class="iis-sub">AES-256 conn string</div>
+      </div>
+      <div class="iis-node">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#185FA5" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="12" y1="17" x2="8" y2="17"/><line x1="16" y1="17" x2="14" y2="17"/></svg>
+        <div class="iis-title">Serilog logs</div>
+        <div class="iis-sub">logs\apibook-*.log</div>
+      </div>
+      <div class="iis-node">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#185FA5" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+        <div class="iis-title">HTTP clients</div>
+        <div class="iis-sub">GET / POST / DELETE</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
