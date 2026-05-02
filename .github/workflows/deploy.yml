@@ -31,17 +31,22 @@ jobs:
     - name: Stop IIS Site
       run: powershell Stop-WebSite -Name "ApiBook"
 
-    # 🧱 App Offline (important)
+    # 🧱 App Offline
     - name: Enable App Offline
       run: echo "offline" > C:\inetpub\ApiBook\app_offline.htm
 
-    # 📂 Copy Files
+    # 📂 Copy Files (robust way)
     - name: Copy Files
-      run: xcopy /E /Y publish\* C:\inetpub\ApiBook\
+      run: |
+        robocopy publish C:\inetpub\ApiBook /E /NFL /NDL /NJH /NJS /NC /NS
+        exit 0
 
-    # 🧹 Remove Offline File
+    # 🧹 Ensure App Online (FAIL-SAFE)
     - name: Remove App Offline
-      run: del C:\inetpub\ApiBook\app_offline.htm
+      run: |
+        if (Test-Path "C:\inetpub\ApiBook\app_offline.htm") {
+          Remove-Item "C:\inetpub\ApiBook\app_offline.htm"
+        }
 
     # ▶ Start IIS
     - name: Start IIS Site
