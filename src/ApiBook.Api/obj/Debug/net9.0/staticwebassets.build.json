@@ -1,12 +1,1 @@
-{
-  "Version": 1,
-  "Hash": "vtZthdq/dzVzvgdemZDKyhrQvt/tfmFyE1djJMh4ar0=",
-  "Source": "ApiBook.Api",
-  "BasePath": "_content/ApiBook.Api",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
-}
+{"Version":1,"Hash":"vtZthdq/dzVzvgdemZDKyhrQvt/tfmFyE1djJMh4ar0=","Source":"ApiBook.Api","BasePath":"_content/ApiBook.Api","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}

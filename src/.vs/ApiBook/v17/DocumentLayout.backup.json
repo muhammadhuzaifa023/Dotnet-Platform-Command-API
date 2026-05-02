@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "F:\\Window Work\\Projects\\Notes\\.NET\\.NET Course for Architectures\\API Book .NET Project\\src\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{058E04B5-BC89-4EE9-856A-63D69F6217F6}|ApiBook.Infrastructure\\ApiBook.Infrastructure.csproj|f:\\window work\\projects\\notes\\.net\\.net course for architectures\\api book .net project\\src\\apibook.infrastructure\\persistence\\migrations\\20260501190630_addauditfieldstoplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{058E04B5-BC89-4EE9-856A-63D69F6217F6}|ApiBook.Infrastructure\\ApiBook.Infrastructure.csproj|solutionrelative:apibook.infrastructure\\persistence\\migrations\\20260501190630_addauditfieldstoplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{26AD5C6A-F471-424D-A110-D3A278FAABE8}|ApiBook.Api\\ApiBook.Api.csproj|f:\\window work\\projects\\notes\\.net\\.net course for architectures\\api book .net project\\src\\apibook.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26AD5C6A-F471-424D-A110-D3A278FAABE8}|ApiBook.Api\\ApiBook.Api.csproj|solutionrelative:apibook.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26AD5C6A-F471-424D-A110-D3A278FAABE8}|ApiBook.Api\\ApiBook.Api.csproj|f:\\window work\\projects\\notes\\.net\\.net course for architectures\\api book .net project\\src\\apibook.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{26AD5C6A-F471-424D-A110-D3A278FAABE8}|ApiBook.Api\\ApiBook.Api.csproj|solutionrelative:apibook.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{26AD5C6A-F471-424D-A110-D3A278FAABE8}|ApiBook.Api\\ApiBook.Api.csproj|f:\\window work\\projects\\notes\\.net\\.net course for architectures\\api book .net project\\src\\apibook.api\\middleware\\performancemiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26AD5C6A-F471-424D-A110-D3A278FAABE8}|ApiBook.Api\\ApiBook.Api.csproj|solutionrelative:apibook.api\\middleware\\performancemiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26AD5C6A-F471-424D-A110-D3A278FAABE8}|ApiBook.Api\\ApiBook.Api.csproj|f:\\window work\\projects\\notes\\.net\\.net course for architectures\\api book .net project\\src\\apibook.api\\middleware\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26AD5C6A-F471-424D-A110-D3A278FAABE8}|ApiBook.Api\\ApiBook.Api.csproj|solutionrelative:apibook.api\\middleware\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,27 +31,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20260501190630_AddAuditFieldsToPlatform.cs",
-              "DocumentMoniker": "F:\\Window Work\\Projects\\Notes\\.NET\\.NET Course for Architectures\\API Book .NET Project\\src\\ApiBook.Infrastructure\\Persistence\\Migrations\\20260501190630_AddAuditFieldsToPlatform.cs",
-              "RelativeDocumentMoniker": "ApiBook.Infrastructure\\Persistence\\Migrations\\20260501190630_AddAuditFieldsToPlatform.cs",
-              "ToolTip": "F:\\Window Work\\Projects\\Notes\\.NET\\.NET Course for Architectures\\API Book .NET Project\\src\\ApiBook.Infrastructure\\Persistence\\Migrations\\20260501190630_AddAuditFieldsToPlatform.cs",
-              "RelativeToolTip": "ApiBook.Infrastructure\\Persistence\\Migrations\\20260501190630_AddAuditFieldsToPlatform.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\Window Work\\Projects\\Notes\\.NET\\.NET Course for Architectures\\API Book .NET Project\\src\\ApiBook.Api\\Program.cs",
+              "RelativeDocumentMoniker": "ApiBook.Api\\Program.cs",
+              "ToolTip": "F:\\Window Work\\Projects\\Notes\\.NET\\.NET Course for Architectures\\API Book .NET Project\\src\\ApiBook.Api\\Program.cs",
+              "RelativeToolTip": "ApiBook.Api\\Program.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGYAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T19:06:31.827Z",
+              "WhenOpened": "2026-05-02T21:10:50.385Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "F:\\Window Work\\Projects\\Notes\\.NET\\.NET Course for Architectures\\API Book .NET Project\\src\\ApiBook.Api\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "ApiBook.Api\\appsettings.Development.json",
-              "ToolTip": "F:\\Window Work\\Projects\\Notes\\.NET\\.NET Course for Architectures\\API Book .NET Project\\src\\ApiBook.Api\\appsettings.Development.json",
-              "RelativeToolTip": "ApiBook.Api\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-05-01T18:50:22.129Z",
+              "Title": "PerformanceMiddleware.cs",
+              "DocumentMoniker": "F:\\Window Work\\Projects\\Notes\\.NET\\.NET Course for Architectures\\API Book .NET Project\\src\\ApiBook.Api\\Middleware\\PerformanceMiddleware.cs",
+              "RelativeDocumentMoniker": "ApiBook.Api\\Middleware\\PerformanceMiddleware.cs",
+              "ToolTip": "F:\\Window Work\\Projects\\Notes\\.NET\\.NET Course for Architectures\\API Book .NET Project\\src\\ApiBook.Api\\Middleware\\PerformanceMiddleware.cs",
+              "RelativeToolTip": "ApiBook.Api\\Middleware\\PerformanceMiddleware.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA1wCIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T21:09:55.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ExceptionMiddleware.cs",
+              "DocumentMoniker": "F:\\Window Work\\Projects\\Notes\\.NET\\.NET Course for Architectures\\API Book .NET Project\\src\\ApiBook.Api\\Middleware\\ExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "ApiBook.Api\\Middleware\\ExceptionMiddleware.cs",
+              "ToolTip": "F:\\Window Work\\Projects\\Notes\\.NET\\.NET Course for Architectures\\API Book .NET Project\\src\\ApiBook.Api\\Middleware\\ExceptionMiddleware.cs",
+              "RelativeToolTip": "ApiBook.Api\\Middleware\\ExceptionMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T21:08:57.315Z",
               "EditorCaption": ""
             }
           ]

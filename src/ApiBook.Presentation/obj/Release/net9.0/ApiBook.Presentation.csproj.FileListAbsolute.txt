@@ -1,0 +1,17 @@
+F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Presentation\bin\Release\net9.0\ApiBook.Presentation.deps.json
+F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Presentation\bin\Release\net9.0\ApiBook.Presentation.dll
+F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Presentation\bin\Release\net9.0\ApiBook.Presentation.pdb
+F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Presentation\bin\Release\net9.0\ApiBook.Application.dll
+F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Presentation\bin\Release\net9.0\ApiBook.Domain.dll
+F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Presentation\bin\Release\net9.0\ApiBook.Application.pdb
+F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Presentation\bin\Release\net9.0\ApiBook.Domain.pdb
+F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Presentation\obj\Release\net9.0\ApiBook.Presentation.csproj.AssemblyReference.cache
+F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Presentation\obj\Release\net9.0\ApiBook.Presentation.GeneratedMSBuildEditorConfig.editorconfig
+F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Presentation\obj\Release\net9.0\ApiBook.Presentation.AssemblyInfoInputs.cache
+F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Presentation\obj\Release\net9.0\ApiBook.Presentation.AssemblyInfo.cs
+F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Presentation\obj\Release\net9.0\ApiBook.Presentation.csproj.CoreCompileInputs.cache
+F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Presentation\obj\Release\net9.0\ApiBook..4947C39B.Up2Date
+F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Presentation\obj\Release\net9.0\ApiBook.Presentation.dll
+F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Presentation\obj\Release\net9.0\refint\ApiBook.Presentation.dll
+F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Presentation\obj\Release\net9.0\ApiBook.Presentation.pdb
+F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Presentation\obj\Release\net9.0\ref\ApiBook.Presentation.dll
