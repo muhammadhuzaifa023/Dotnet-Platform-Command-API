@@ -19,13 +19,13 @@ jobs:
         dotnet-version: '9.0.x'
 
     - name: Restore
-      run: dotnet restore
+      run: dotnet restore src/ApiBook.sln
 
     - name: Build
-      run: dotnet build --configuration Release
+      run: dotnet build src/ApiBook.sln --configuration Release
 
     - name: Publish
-      run: dotnet publish ApiBook.Api -c Release -o publish
+      run: dotnet publish src/ApiBook.Api -c Release -o publish
 
     - name: Stop IIS Site
       run: powershell Stop-WebSite -Name "ApiBook"
