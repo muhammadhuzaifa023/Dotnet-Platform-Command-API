@@ -35,13 +35,45 @@ jobs:
     - name: Enable App Offline
       run: echo "offline" > C:\inetpub\ApiBook\app_offline.htm
 
-    # 📂 Copy Files (robust way)
+    # 📂 Copy Files
     - name: Copy Files
       run: |
         robocopy publish C:\inetpub\ApiBook /E /NFL /NDL /NJH /NJS /NC /NS
         exit 0
 
-    # 🧹 Ensure App Online (FAIL-SAFE)
+    # 🔥 UPDATE WEB.CONFIG (IMPORTANT STEP)
+    - name: Update web.config (Environment + Logs)
+      run: |
+        powershell -Command "
+        [xml]$xml = Get-Content 'C:\inetpub\ApiBook\web.config';
+
+        $asp = $xml.configuration.location.'system.webServer'.aspNetCore;
+
+        # Enable logs
+        $asp.stdoutLogEnabled = 'true';
+
+        # Create env section if not exists
+        if (-not $asp.environmentVariables) {
+            $envVars = $xml.CreateElement('environmentVariables');
+            $asp.AppendChild($envVars) | Out-Null;
+        }
+
+        # Remove existing variable
+        $existing = $asp.environmentVariables.environmentVariable | Where-Object { $_.name -eq 'ASPNETCORE_ENVIRONMENT' };
+        if ($existing) {
+            $asp.environmentVariables.RemoveChild($existing) | Out-Null;
+        }
+
+        # Add Development env
+        $env = $xml.CreateElement('environmentVariable');
+        $env.SetAttribute('name', 'ASPNETCORE_ENVIRONMENT');
+        $env.SetAttribute('value', 'Development');
+        $asp.environmentVariables.AppendChild($env) | Out-Null;
+
+        $xml.Save('C:\inetpub\ApiBook\web.config');
+        "
+
+    # 🧹 Remove Offline File
     - name: Remove App Offline
       run: |
         if (Test-Path "C:\inetpub\ApiBook\app_offline.htm") {
