@@ -100,6 +100,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseStructuredRequestLogging();
 app.UseMiddleware<ExceptionMiddleware>();
+app.UseMiddleware<PerformanceMiddleware>();
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseMiddleware<ApiKeyMiddleware>();
