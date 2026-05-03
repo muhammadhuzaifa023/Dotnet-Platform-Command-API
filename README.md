@@ -552,9 +552,19 @@ CREATE TABLE commands (
 | `ASPNETCORE_ENVIRONMENT` | Optional | `Development` / `Production` |
 
 ---
-## 🏛 Architecture Diagram
+## 🏛 Infrastructure Diagram 1
 
 ![Deployment Diagram](images/Deployment%20Diagram%20of%20API%20Book%20Project.png)
+
+🚀 Infrastructure Diagram (CI/CD Pipeline)
+
+Stack: DigitalOcean Droplet · Jenkins · Nginx · ASP.NET Core · PostgreSQL
+
+🔴 View Live Interactive Diagram
+
+Visual representation of automated build, test, and deployment pipeline from GitHub to production server.
+
+
 
 ## 🚀 Getting Started
 
