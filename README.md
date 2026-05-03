@@ -556,13 +556,13 @@ CREATE TABLE commands (
 
 ![Deployment Diagram](images/Deployment%20Diagram%20of%20API%20Book%20Project.png)
 
-🚀 Infrastructure Diagram (CI/CD Pipeline)
+## 🚀 Infrastructure Diagram (CI/CD Pipeline)
 
-Stack: DigitalOcean Droplet · Jenkins · Nginx · ASP.NET Core · PostgreSQL
+**Stack:** DigitalOcean Droplet · Jenkins · Nginx · ASP.NET Core · PostgreSQL  
 
-🔴 View Live Interactive Diagram
+👉 [🔴 View Live Interactive Diagram](https://muhammadhuzaifa023.github.io/Dotnet-Platform-Command-API/infra-v2.html)
 
-Visual representation of automated build, test, and deployment pipeline from GitHub to production server.
+> Visual representation of automated build, test, and deployment pipeline from GitHub to production server.
 
 
 
