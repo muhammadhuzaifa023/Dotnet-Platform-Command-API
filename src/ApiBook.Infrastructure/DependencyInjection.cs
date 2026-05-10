@@ -1,5 +1,7 @@
 using ApiBook.Application.Contracts;
 using ApiBook.Application.Services;
+using ApiBook.Application.Agents;
+using ApiBook.Application.Security;
 using ApiBook.Infrastructure.Persistence;
 using ApiBook.Infrastructure.Repositories;
 using ApiBook.Infrastructure.Security;
@@ -16,11 +18,19 @@ public static class DependencyInjection
     {
         services.AddScoped<IPlatformService, PlatformService>();
         services.AddScoped<ICommandService, CommandService>();
+        services.AddScoped<IPlatformSearchAgent, PlatformSearchAgent>();
+        services.AddScoped<ICommandRecommendationAgent, CommandRecommendationAgent>();
+        services.AddScoped<IAgentOrchestrator, AgentOrchestrator>();
         return services;
     }
 
     public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
     {
+        services.Configure<SecurityAuditOptions>(configuration.GetSection("SecurityAudit"));
+        services.AddSingleton<IRiskScoreEngine, RiskScoreEngine>();
+        services.AddScoped<ISecurityAuditTrail, SecurityAuditTrailService>();
+        services.AddScoped<ISecurityAuditLogRepository, SecurityAuditLogRepository>();
+
         services.AddSingleton<IEncryptedConnectionStringResolver, EncryptedConnectionStringResolver>();
 
         services.AddDbContext<AppDbContext>((provider, options) =>
