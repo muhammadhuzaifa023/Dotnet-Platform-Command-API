@@ -108,6 +108,7 @@ app.UseMiddleware<ExceptionMiddleware>();
 app.UseMiddleware<PerformanceMiddleware>();
 app.UseHttpsRedirection();
 app.UseAuthentication();
+app.UseSecurityAudit();
 app.UseMiddleware<ApiKeyMiddleware>();
 app.UseAuthorization();
 app.MapControllers();

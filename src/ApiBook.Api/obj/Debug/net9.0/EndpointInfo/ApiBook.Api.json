@@ -5,6 +5,37 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/agent/commands/recommend": {
+      "post": {
+        "tags": [
+          "Agent"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AgentRecommendRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AgentRecommendRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AgentRecommendRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/auth/token": {
       "post": {
         "tags": [
@@ -312,6 +343,25 @@
   },
   "components": {
     "schemas": {
+      "AgentRecommendRequestDto": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "nullable": true
+          },
+          "platformId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "maxResults": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "AuthLoginRequestDto": {
         "type": "object",
         "properties": {

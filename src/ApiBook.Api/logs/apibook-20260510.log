@@ -1,0 +1,1031 @@
+2026-05-10 10:35:07.124 -07:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-05-10 10:35:07.331 -07:00 [DBG] Hosting starting
+2026-05-10 10:35:07.398 -07:00 [INF] User profile is available. Using 'C:\Users\Yoga 370\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-10 10:35:07.414 -07:00 [DBG] Reading data from file 'C:\Users\Yoga 370\AppData\Local\ASP.NET\DataProtection-Keys\key-07b448e9-04a3-4c29-bb41-3652cb1fe1db.xml'.
+2026-05-10 10:35:07.496 -07:00 [DBG] Reading data from file 'C:\Users\Yoga 370\AppData\Local\ASP.NET\DataProtection-Keys\key-0a85a8b0-2aba-420f-948f-6e479b4d5f65.xml'.
+2026-05-10 10:35:07.532 -07:00 [DBG] Reading data from file 'C:\Users\Yoga 370\AppData\Local\ASP.NET\DataProtection-Keys\key-16b319a5-5e55-4f02-b657-b03f7f63dc68.xml'.
+2026-05-10 10:35:07.557 -07:00 [DBG] Reading data from file 'C:\Users\Yoga 370\AppData\Local\ASP.NET\DataProtection-Keys\key-583f58f3-30d4-4814-ab02-829e43d9306b.xml'.
+2026-05-10 10:35:07.582 -07:00 [DBG] Found key {07b448e9-04a3-4c29-bb41-3652cb1fe1db}.
+2026-05-10 10:35:07.596 -07:00 [DBG] Found key {0a85a8b0-2aba-420f-948f-6e479b4d5f65}.
+2026-05-10 10:35:07.598 -07:00 [DBG] Found key {16b319a5-5e55-4f02-b657-b03f7f63dc68}.
+2026-05-10 10:35:07.600 -07:00 [DBG] Found key {583f58f3-30d4-4814-ab02-829e43d9306b}.
+2026-05-10 10:35:07.615 -07:00 [DBG] Considering key {16b319a5-5e55-4f02-b657-b03f7f63dc68} with expiration date 2026-07-30 15:39:16Z as default key.
+2026-05-10 10:35:07.628 -07:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-05-10 10:35:07.640 -07:00 [DBG] Decrypting secret element using Windows DPAPI.
+2026-05-10 10:35:07.644 -07:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-05-10 10:35:07.657 -07:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2026-05-10 10:35:07.660 -07:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2026-05-10 10:35:07.665 -07:00 [DBG] Using key {16b319a5-5e55-4f02-b657-b03f7f63dc68} as the default key.
+2026-05-10 10:35:07.671 -07:00 [DBG] Key ring with default key {16b319a5-5e55-4f02-b657-b03f7f63dc68} was loaded during application startup.
+2026-05-10 10:35:07.693 -07:00 [DBG] Middleware loaded
+2026-05-10 10:35:07.700 -07:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16507 B).
+2026-05-10 10:35:07.704 -07:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2026-05-10 10:35:07.914 -07:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2026-05-10 10:35:07.920 -07:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-05-10 10:35:07.947 -07:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2026-05-10 10:35:08.498 -07:00 [INF] Now listening on: https://localhost:7097
+2026-05-10 10:35:08.528 -07:00 [INF] Now listening on: http://localhost:5227
+2026-05-10 10:35:08.625 -07:00 [DBG] Loaded hosting startup assembly ApiBook.Api
+2026-05-10 10:35:08.690 -07:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2026-05-10 10:35:08.695 -07:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2026-05-10 10:35:08.706 -07:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2026-05-10 10:35:08.757 -07:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2026-05-10 10:35:08.762 -07:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2026-05-10 10:35:08.938 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-10 10:35:09.104 -07:00 [INF] Hosting environment: Development
+2026-05-10 10:35:09.115 -07:00 [INF] Content root path: F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api
+2026-05-10 10:35:09.186 -07:00 [DBG] Hosting started
+2026-05-10 10:35:41.598 -07:00 [DBG] Connection id "0HNLENA7CKPSF" accepted.
+2026-05-10 10:35:41.609 -07:00 [DBG] Connection id "0HNLENA7CKPSG" accepted.
+2026-05-10 10:35:41.631 -07:00 [DBG] Connection id "0HNLENA7CKPSF" started.
+2026-05-10 10:35:41.634 -07:00 [DBG] Connection id "0HNLENA7CKPSG" started.
+2026-05-10 10:35:41.760 -07:00 [DBG] Connection id "0HNLENA7CKPSF" received FIN.
+2026-05-10 10:35:41.773 -07:00 [DBG] Connection 0HNLENA7CKPSF established using the following protocol: "Tls12"
+2026-05-10 10:35:41.773 -07:00 [DBG] Connection 0HNLENA7CKPSG established using the following protocol: "Tls12"
+2026-05-10 10:35:41.808 -07:00 [DBG] Connection id "0HNLENA7CKPSF" is closed. The last processed stream ID was 0.
+2026-05-10 10:35:41.811 -07:00 [DBG] Connection id "0HNLENA7CKPSF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-05-10 10:35:41.819 -07:00 [DBG] The connection queue processing loop for 0HNLENA7CKPSF completed.
+2026-05-10 10:35:41.825 -07:00 [DBG] Connection id "0HNLENA7CKPSF" stopped.
+2026-05-10 10:35:41.861 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7097/swagger/index.html - null null
+2026-05-10 10:35:42.180 -07:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2026-05-10 10:35:42.182 -07:00 [DBG] Request did not match any endpoints
+2026-05-10 10:35:42.439 -07:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2026-05-10 10:35:42.444 -07:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2026-05-10 10:35:42.508 -07:00 [DBG] Response markup was updated to include Browser Link script injection.
+2026-05-10 10:35:42.739 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7097/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-10 10:35:42.757 -07:00 [DBG] Response markup was updated to include browser refresh script injection.
+2026-05-10 10:35:42.759 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7097/_vs/browserLink - null null
+2026-05-10 10:35:42.780 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7097/swagger/index.html - 200 null text/html;charset=utf-8 925.4549ms
+2026-05-10 10:35:42.785 -07:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2026-05-10 10:35:42.815 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7097/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 76.8742ms
+2026-05-10 10:35:42.925 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7097/_vs/browserLink - 200 null text/javascript; charset=UTF-8 166.9022ms
+2026-05-10 10:35:43.569 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7097/swagger/v1/swagger.json - null null
+2026-05-10 10:35:43.576 -07:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2026-05-10 10:35:43.614 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7097/swagger/favicon-32x32.png - null null
+2026-05-10 10:35:43.627 -07:00 [DBG] Request did not match any endpoints
+2026-05-10 10:35:43.633 -07:00 [DBG] No candidates found for the request path '/swagger/favicon-32x32.png'
+2026-05-10 10:35:43.649 -07:00 [DBG] Request did not match any endpoints
+2026-05-10 10:35:43.661 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7097/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 91.9495ms
+2026-05-10 10:35:43.701 -07:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-05-10 10:35:43.753 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7097/swagger/favicon-32x32.png - 200 628 image/png 139.3778ms
+2026-05-10 10:36:20.121 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7097/api/agent/commands/recommend - application/json 77
+2026-05-10 10:36:20.137 -07:00 [DBG] 1 candidate(s) found for the request path '/api/agent/commands/recommend'
+2026-05-10 10:36:20.140 -07:00 [DBG] Endpoint 'ApiBook.Presentation.Controllers.AgentController.RecommendCommands (ApiBook.Presentation)' with route pattern 'api/agent/commands/recommend' is valid for the request path '/api/agent/commands/recommend'
+2026-05-10 10:36:20.146 -07:00 [DBG] Request matched endpoint 'ApiBook.Presentation.Controllers.AgentController.RecommendCommands (ApiBook.Presentation)'
+2026-05-10 10:36:20.151 -07:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2026-05-10 10:36:23.966 -07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-05-10 10:36:23.975 -07:00 [INF] API /api/agent/commands/recommend responded 401 in 3817 ms
+2026-05-10 10:36:23.984 -07:00 [WRN] ⚠️ Slow API /api/agent/commands/recommend took 3817 ms
+2026-05-10 10:36:23.988 -07:00 [INF] HTTP POST /api/agent/commands/recommend responded 401 in 3829.7489 ms
+2026-05-10 10:36:23.991 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7097/api/agent/commands/recommend - 401 null application/json; charset=utf-8 3870.1904ms
+2026-05-10 10:36:23.999 -07:00 [DBG] Connection id "0HNLENA7CKPSG", Request id "0HNLENA7CKPSG:0000000B": started reading request body.
+2026-05-10 10:36:24.002 -07:00 [DBG] Connection id "0HNLENA7CKPSG", Request id "0HNLENA7CKPSG:0000000B": done reading request body.
+2026-05-10 10:37:26.737 -07:00 [INF] Request starting HTTP/2 POST https://localhost:7097/api/agent/commands/recommend - application/json 77
+2026-05-10 10:37:26.748 -07:00 [DBG] 1 candidate(s) found for the request path '/api/agent/commands/recommend'
+2026-05-10 10:37:26.750 -07:00 [DBG] Endpoint 'ApiBook.Presentation.Controllers.AgentController.RecommendCommands (ApiBook.Presentation)' with route pattern 'api/agent/commands/recommend' is valid for the request path '/api/agent/commands/recommend'
+2026-05-10 10:37:26.758 -07:00 [DBG] Request matched endpoint 'ApiBook.Presentation.Controllers.AgentController.RecommendCommands (ApiBook.Presentation)'
+2026-05-10 10:37:26.760 -07:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2026-05-10 10:37:26.763 -07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-05-10 10:37:26.853 -07:00 [INF] Executing endpoint 'ApiBook.Presentation.Controllers.AgentController.RecommendCommands (ApiBook.Presentation)'
+2026-05-10 10:37:26.905 -07:00 [INF] Route matched with {action = "RecommendCommands", controller = "Agent"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RecommendCommands(ApiBook.Application.DTOs.AgentRecommendRequestDto, System.Threading.CancellationToken) on controller ApiBook.Presentation.Controllers.AgentController (ApiBook.Presentation).
+2026-05-10 10:37:26.910 -07:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-05-10 10:37:26.912 -07:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-05-10 10:37:26.915 -07:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-05-10 10:37:26.918 -07:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-05-10 10:37:26.920 -07:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-05-10 10:37:26.928 -07:00 [DBG] Executing controller factory for controller ApiBook.Presentation.Controllers.AgentController (ApiBook.Presentation)
+2026-05-10 10:37:29.829 -07:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-05-10 10:37:29.870 -07:00 [DBG] Executed controller factory for controller ApiBook.Presentation.Controllers.AgentController (ApiBook.Presentation)
+2026-05-10 10:37:29.892 -07:00 [DBG] Attempting to bind parameter 'request' of type 'ApiBook.Application.DTOs.AgentRecommendRequestDto' ...
+2026-05-10 10:37:29.898 -07:00 [DBG] Attempting to bind parameter 'request' of type 'ApiBook.Application.DTOs.AgentRecommendRequestDto' using the name '' in request data ...
+2026-05-10 10:37:29.906 -07:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2026-05-10 10:37:29.924 -07:00 [DBG] Connection id "0HNLENA7CKPSG", Request id "0HNLENA7CKPSG:0000000D": started reading request body.
+2026-05-10 10:37:29.927 -07:00 [DBG] Connection id "0HNLENA7CKPSG", Request id "0HNLENA7CKPSG:0000000D": done reading request body.
+2026-05-10 10:37:29.946 -07:00 [DBG] JSON input formatter succeeded, deserializing to type 'ApiBook.Application.DTOs.AgentRecommendRequestDto'
+2026-05-10 10:37:29.950 -07:00 [DBG] Done attempting to bind parameter 'request' of type 'ApiBook.Application.DTOs.AgentRecommendRequestDto'.
+2026-05-10 10:37:29.952 -07:00 [DBG] Done attempting to bind parameter 'request' of type 'ApiBook.Application.DTOs.AgentRecommendRequestDto'.
+2026-05-10 10:37:29.955 -07:00 [DBG] Attempting to validate the bound parameter 'request' of type 'ApiBook.Application.DTOs.AgentRecommendRequestDto' ...
+2026-05-10 10:37:29.985 -07:00 [DBG] Done attempting to validate the bound parameter 'request' of type 'ApiBook.Application.DTOs.AgentRecommendRequestDto'.
+2026-05-10 10:37:29.991 -07:00 [DBG] Attempting to bind parameter 'cancellationToken' of type 'System.Threading.CancellationToken' ...
+2026-05-10 10:37:29.993 -07:00 [DBG] Done attempting to bind parameter 'cancellationToken' of type 'System.Threading.CancellationToken'.
+2026-05-10 10:37:29.995 -07:00 [DBG] Attempting to validate the bound parameter 'cancellationToken' of type 'System.Threading.CancellationToken' ...
+2026-05-10 10:37:29.998 -07:00 [DBG] Done attempting to validate the bound parameter 'cancellationToken' of type 'System.Threading.CancellationToken'.
+2026-05-10 10:37:30.886 -07:00 [WRN] Entity 'Platform' has a global query filter defined and is the required end of a relationship with the entity 'Command'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-10 10:37:31.064 -07:00 [DBG] Entity Framework Core 9.0.1 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5' with options: None
+2026-05-10 10:37:31.147 -07:00 [DBG] Compiling query expression: 
+'DbSet<Platform>()
+    .FirstOrDefault(x => x.Id == __id_0)'
+2026-05-10 10:37:31.750 -07:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Platform>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<Platform>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Platform.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Platform.CreatedAt (DateTime) Required, 1], [Property: Platform.IsDeleted (bool) Required, 2], [Property: Platform.Name (string) Required MaxLength(100), 3], [Property: Platform.Publisher (string) Required MaxLength(100), 4], [Property: Platform.UpdatedAt (DateTime?), 5] }
+            SELECT TOP(1) p.Id, p.CreatedAt, p.IsDeleted, p.Name, p.Publisher, p.UpdatedAt
+            FROM platforms AS p
+            WHERE Not(p.IsDeleted) && (p.Id == @__id_0)) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Platform.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Platform.CreatedAt (DateTime) Required, 1], [Property: Platform.IsDeleted (bool) Required, 2], [Property: Platform.Name (string) Required MaxLength(100), 3], [Property: Platform.Publisher (string) Required MaxLength(100), 4], [Property: Platform.UpdatedAt (DateTime?), 5] }
+            SELECT TOP(1) p.Id, p.CreatedAt, p.IsDeleted, p.Name, p.Publisher, p.UpdatedAt
+            FROM platforms AS p
+            WHERE Not(p.IsDeleted) && (p.Id == @__id_0), 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            Platform entity;
+            entity = 
+            {
+                MaterializationContext materializationContext1;
+                IEntityType entityType1;
+                Platform instance1;
+                InternalEntityEntry entry1;
+                bool hasNullKey1;
+                materializationContext1 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance1 = default(Platform);
+                entry1 = queryContext.TryGetEntry(
+                    key: [LIFTABLE Constant: Key: Platform.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("ApiBook.Domain.Entities.Platform").FindPrimaryKey()], 
+                    keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                    throwOnNullKey: True, 
+                    hasNullKey: hasNullKey1);
+                !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+                {
+                    entityType1 = entry1.EntityType;
+                    return instance1 = (Platform)entry1.Entity;
+                } : 
+                {
+                    ISnapshot shadowSnapshot1;
+                    shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType1 = [LIFTABLE Constant: EntityType: Platform | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("ApiBook.Domain.Entities.Platform")];
+                    instance1 = switch (entityType1)
+                    {
+                        case [LIFTABLE Constant: EntityType: Platform | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("ApiBook.Domain.Entities.Platform")]: 
+                            {
+                                return 
+                                {
+                                    Platform instance;
+                                    instance = new Platform();
+                                    instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                    instance.<CreatedAt>k__BackingField = dataReader.GetDateTime(1);
+                                    instance.<IsDeleted>k__BackingField = dataReader.GetBoolean(2);
+                                    instance.<Name>k__BackingField = dataReader.GetString(3);
+                                    instance.<Publisher>k__BackingField = dataReader.GetString(4);
+                                    instance.<UpdatedAt>k__BackingField = dataReader.IsDBNull(5) ? default(DateTime?) : (DateTime?)dataReader.GetDateTime(5);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: TrackAll, 
+                                        structuralType: [LIFTABLE Constant: EntityType: Platform | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("ApiBook.Domain.Entities.Platform")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(Platform)
+                    }
+                    ;
+                    entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                        entityType: entityType1, 
+                        entity: instance1, 
+                        snapshot: shadowSnapshot1);
+                    return instance1;
+                } : default(void);
+                return instance1;
+            };
+            return entity;
+        }, 
+        contextType: ApiBook.Infrastructure.Persistence.AppDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2026-05-10 10:37:31.857 -07:00 [DBG] Creating DbConnection.
+2026-05-10 10:37:31.951 -07:00 [DBG] Created DbConnection. (87ms).
+2026-05-10 10:37:31.960 -07:00 [DBG] Opening connection to database 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 10:37:32.576 -07:00 [DBG] Opened connection to database 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 10:37:32.581 -07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-05-10 10:37:32.588 -07:00 [DBG] Created DbCommand for 'ExecuteReader' (6ms).
+2026-05-10 10:37:32.602 -07:00 [DBG] Initialized DbCommand for 'ExecuteReader' (19ms).
+2026-05-10 10:37:32.621 -07:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."CreatedAt", p."IsDeleted", p."Name", p."Publisher", p."UpdatedAt"
+FROM platforms AS p
+WHERE NOT (p."IsDeleted") AND p."Id" = @__id_0
+LIMIT 1
+2026-05-10 10:37:32.771 -07:00 [INF] Executed DbCommand (149ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."CreatedAt", p."IsDeleted", p."Name", p."Publisher", p."UpdatedAt"
+FROM platforms AS p
+WHERE NOT (p."IsDeleted") AND p."Id" = @__id_0
+LIMIT 1
+2026-05-10 10:37:32.809 -07:00 [DBG] Closing data reader to 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 10:37:32.833 -07:00 [DBG] A data reader for 'apibook' on server 'tcp://localhost:5432' is being disposed after spending 37ms reading results.
+2026-05-10 10:37:32.850 -07:00 [DBG] Closing connection to database 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 10:37:32.865 -07:00 [DBG] Closed connection to database 'apibook' on server 'tcp://localhost:5432' (12ms).
+2026-05-10 10:37:32.894 -07:00 [DBG] Compiling query expression: 
+'DbSet<Platform>()
+    .AsNoTracking()
+    .OrderBy(x => x.Id)'
+2026-05-10 10:37:32.933 -07:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<Platform>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Platform.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Platform.CreatedAt (DateTime) Required, 1], [Property: Platform.IsDeleted (bool) Required, 2], [Property: Platform.Name (string) Required MaxLength(100), 3], [Property: Platform.Publisher (string) Required MaxLength(100), 4], [Property: Platform.UpdatedAt (DateTime?), 5] }
+        SELECT p.Id, p.CreatedAt, p.IsDeleted, p.Name, p.Publisher, p.UpdatedAt
+        FROM platforms AS p
+        WHERE Not(p.IsDeleted)
+        ORDER BY p.Id ASC) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Platform.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Platform.CreatedAt (DateTime) Required, 1], [Property: Platform.IsDeleted (bool) Required, 2], [Property: Platform.Name (string) Required MaxLength(100), 3], [Property: Platform.Publisher (string) Required MaxLength(100), 4], [Property: Platform.UpdatedAt (DateTime?), 5] }
+        SELECT p.Id, p.CreatedAt, p.IsDeleted, p.Name, p.Publisher, p.UpdatedAt
+        FROM platforms AS p
+        WHERE Not(p.IsDeleted)
+        ORDER BY p.Id ASC, 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        Platform entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            Platform instance1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(Platform);
+            (object)dataReader.GetInt32(0) != null ? 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: Platform | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("ApiBook.Domain.Entities.Platform")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: Platform | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("ApiBook.Domain.Entities.Platform")]: 
+                        {
+                            return 
+                            {
+                                Platform instance;
+                                instance = new Platform();
+                                instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                instance.<CreatedAt>k__BackingField = dataReader.GetDateTime(1);
+                                instance.<IsDeleted>k__BackingField = dataReader.GetBoolean(2);
+                                instance.<Name>k__BackingField = dataReader.GetString(3);
+                                instance.<Publisher>k__BackingField = dataReader.GetString(4);
+                                instance.<UpdatedAt>k__BackingField = dataReader.IsDBNull(5) ? default(DateTime?) : (DateTime?)dataReader.GetDateTime(5);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: NoTracking, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Platform | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("ApiBook.Domain.Entities.Platform")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Platform)
+                }
+                ;
+                return instance1;
+            } : 
+            {
+                object[] keyValues1;
+                keyValues1 = new object[]{ (object)dataReader.GetInt32(0) };
+                return ShapedQueryCompilingExpressionVisitor.CreateNullKeyValueInNoTrackingQuery(
+                    entityType: [LIFTABLE Constant: EntityType: Platform | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType("ApiBook.Domain.Entities.Platform")], 
+                    properties: [LIFTABLE Constant: List<RuntimeProperty> { Property: Platform.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd } | Resolver: c => c.Dependencies.Model.FindEntityType("ApiBook.Domain.Entities.Platform").FindPrimaryKey().Properties], 
+                    keyValues: keyValues1);
+            };
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: ApiBook.Infrastructure.Persistence.AppDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2026-05-10 10:37:33.051 -07:00 [DBG] Opening connection to database 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 10:37:33.056 -07:00 [DBG] Opened connection to database 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 10:37:33.060 -07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-05-10 10:37:33.065 -07:00 [DBG] Created DbCommand for 'ExecuteReader' (4ms).
+2026-05-10 10:37:33.071 -07:00 [DBG] Initialized DbCommand for 'ExecuteReader' (11ms).
+2026-05-10 10:37:33.076 -07:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."CreatedAt", p."IsDeleted", p."Name", p."Publisher", p."UpdatedAt"
+FROM platforms AS p
+WHERE NOT (p."IsDeleted")
+ORDER BY p."Id"
+2026-05-10 10:37:33.102 -07:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."CreatedAt", p."IsDeleted", p."Name", p."Publisher", p."UpdatedAt"
+FROM platforms AS p
+WHERE NOT (p."IsDeleted")
+ORDER BY p."Id"
+2026-05-10 10:37:33.153 -07:00 [DBG] Closing data reader to 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 10:37:33.157 -07:00 [DBG] A data reader for 'apibook' on server 'tcp://localhost:5432' is being disposed after spending 41ms reading results.
+2026-05-10 10:37:33.163 -07:00 [DBG] Closing connection to database 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 10:37:33.172 -07:00 [DBG] Closed connection to database 'apibook' on server 'tcp://localhost:5432' (9ms).
+2026-05-10 10:37:33.191 -07:00 [DBG] Compiling query expression: 
+'DbSet<Command>()
+    .AsNoTracking()
+    .Where(x => x.PlatformId == __platformId_0)
+    .OrderBy(x => x.Id)'
+2026-05-10 10:37:33.217 -07:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<Command>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Command.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Command.CommandLine (string) Required MaxLength(200), 1], [Property: Command.HowTo (string) Required MaxLength(200), 2], [Property: Command.PlatformId (int) Required FK Index, 3] }
+        SELECT c.Id, c.CommandLine, c.HowTo, c.PlatformId
+        FROM commands AS c
+        WHERE c.PlatformId == @__platformId_0
+        ORDER BY c.Id ASC) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Command.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Command.CommandLine (string) Required MaxLength(200), 1], [Property: Command.HowTo (string) Required MaxLength(200), 2], [Property: Command.PlatformId (int) Required FK Index, 3] }
+        SELECT c.Id, c.CommandLine, c.HowTo, c.PlatformId
+        FROM commands AS c
+        WHERE c.PlatformId == @__platformId_0
+        ORDER BY c.Id ASC, 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        Command entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            Command instance1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(Command);
+            (object)dataReader.GetInt32(0) != null ? 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: Command | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("ApiBook.Domain.Entities.Command")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: Command | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("ApiBook.Domain.Entities.Command")]: 
+                        {
+                            return 
+                            {
+                                Command instance;
+                                instance = new Command();
+                                instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                instance.<CommandLine>k__BackingField = dataReader.GetString(1);
+                                instance.<HowTo>k__BackingField = dataReader.GetString(2);
+                                instance.<PlatformId>k__BackingField = dataReader.GetInt32(3);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: NoTracking, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Command | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("ApiBook.Domain.Entities.Command")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Command)
+                }
+                ;
+                return instance1;
+            } : 
+            {
+                object[] keyValues1;
+                keyValues1 = new object[]{ (object)dataReader.GetInt32(0) };
+                return ShapedQueryCompilingExpressionVisitor.CreateNullKeyValueInNoTrackingQuery(
+                    entityType: [LIFTABLE Constant: EntityType: Command | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType("ApiBook.Domain.Entities.Command")], 
+                    properties: [LIFTABLE Constant: List<RuntimeProperty> { Property: Command.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd } | Resolver: c => c.Dependencies.Model.FindEntityType("ApiBook.Domain.Entities.Command").FindPrimaryKey().Properties], 
+                    keyValues: keyValues1);
+            };
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: ApiBook.Infrastructure.Persistence.AppDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2026-05-10 10:37:33.304 -07:00 [DBG] Opening connection to database 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 10:37:33.308 -07:00 [DBG] Opened connection to database 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 10:37:33.312 -07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-05-10 10:37:33.315 -07:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2026-05-10 10:37:33.322 -07:00 [DBG] Initialized DbCommand for 'ExecuteReader' (10ms).
+2026-05-10 10:37:33.326 -07:00 [DBG] Executing DbCommand [Parameters=[@__platformId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."CommandLine", c."HowTo", c."PlatformId"
+FROM commands AS c
+WHERE c."PlatformId" = @__platformId_0
+ORDER BY c."Id"
+2026-05-10 10:37:33.350 -07:00 [INF] Executed DbCommand (24ms) [Parameters=[@__platformId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."CommandLine", c."HowTo", c."PlatformId"
+FROM commands AS c
+WHERE c."PlatformId" = @__platformId_0
+ORDER BY c."Id"
+2026-05-10 10:37:33.365 -07:00 [DBG] Closing data reader to 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 10:37:33.372 -07:00 [DBG] A data reader for 'apibook' on server 'tcp://localhost:5432' is being disposed after spending 8ms reading results.
+2026-05-10 10:37:33.379 -07:00 [DBG] Closing connection to database 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 10:37:33.389 -07:00 [DBG] Closed connection to database 'apibook' on server 'tcp://localhost:5432' (10ms).
+2026-05-10 10:37:33.417 -07:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-05-10 10:37:33.432 -07:00 [DBG] No information found on request to perform content negotiation.
+2026-05-10 10:37:33.433 -07:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2026-05-10 10:37:33.440 -07:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2026-05-10 10:37:33.448 -07:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2026-05-10 10:37:33.454 -07:00 [INF] Executing OkObjectResult, writing value of type 'ApiBook.Application.Common.ApiResponse`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-10 10:37:33.493 -07:00 [INF] Executed action ApiBook.Presentation.Controllers.AgentController.RecommendCommands (ApiBook.Presentation) in 6562.8153ms
+2026-05-10 10:37:33.500 -07:00 [INF] Executed endpoint 'ApiBook.Presentation.Controllers.AgentController.RecommendCommands (ApiBook.Presentation)'
+2026-05-10 10:37:33.511 -07:00 [INF] API /api/agent/commands/recommend responded 200 in 6748 ms
+2026-05-10 10:37:33.516 -07:00 [WRN] ⚠️ Slow API /api/agent/commands/recommend took 6748 ms
+2026-05-10 10:37:33.522 -07:00 [INF] HTTP POST /api/agent/commands/recommend responded 200 in 6759.3628 ms
+2026-05-10 10:37:33.559 -07:00 [DBG] 'AppDbContext' disposed.
+2026-05-10 10:37:33.573 -07:00 [DBG] Disposing connection to database 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 10:37:33.579 -07:00 [DBG] Disposed connection to database 'apibook' on server 'tcp://localhost:5432' (5ms).
+2026-05-10 10:37:33.583 -07:00 [INF] Request finished HTTP/2 POST https://localhost:7097/api/agent/commands/recommend - 200 null application/json; charset=utf-8 6845.7845ms
+2026-05-10 11:05:04.918 -07:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-05-10 11:05:05.150 -07:00 [DBG] Hosting starting
+2026-05-10 11:05:05.221 -07:00 [INF] User profile is available. Using 'C:\Users\Yoga 370\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-10 11:05:05.248 -07:00 [DBG] Reading data from file 'C:\Users\Yoga 370\AppData\Local\ASP.NET\DataProtection-Keys\key-07b448e9-04a3-4c29-bb41-3652cb1fe1db.xml'.
+2026-05-10 11:05:05.272 -07:00 [DBG] Reading data from file 'C:\Users\Yoga 370\AppData\Local\ASP.NET\DataProtection-Keys\key-0a85a8b0-2aba-420f-948f-6e479b4d5f65.xml'.
+2026-05-10 11:05:05.276 -07:00 [DBG] Reading data from file 'C:\Users\Yoga 370\AppData\Local\ASP.NET\DataProtection-Keys\key-16b319a5-5e55-4f02-b657-b03f7f63dc68.xml'.
+2026-05-10 11:05:05.279 -07:00 [DBG] Reading data from file 'C:\Users\Yoga 370\AppData\Local\ASP.NET\DataProtection-Keys\key-583f58f3-30d4-4814-ab02-829e43d9306b.xml'.
+2026-05-10 11:05:05.288 -07:00 [DBG] Found key {07b448e9-04a3-4c29-bb41-3652cb1fe1db}.
+2026-05-10 11:05:05.309 -07:00 [DBG] Found key {0a85a8b0-2aba-420f-948f-6e479b4d5f65}.
+2026-05-10 11:05:05.312 -07:00 [DBG] Found key {16b319a5-5e55-4f02-b657-b03f7f63dc68}.
+2026-05-10 11:05:05.314 -07:00 [DBG] Found key {583f58f3-30d4-4814-ab02-829e43d9306b}.
+2026-05-10 11:05:05.330 -07:00 [DBG] Considering key {16b319a5-5e55-4f02-b657-b03f7f63dc68} with expiration date 2026-07-30 15:39:16Z as default key.
+2026-05-10 11:05:05.367 -07:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-05-10 11:05:05.371 -07:00 [DBG] Decrypting secret element using Windows DPAPI.
+2026-05-10 11:05:05.374 -07:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-05-10 11:05:05.379 -07:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2026-05-10 11:05:05.382 -07:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2026-05-10 11:05:05.385 -07:00 [DBG] Using key {16b319a5-5e55-4f02-b657-b03f7f63dc68} as the default key.
+2026-05-10 11:05:05.387 -07:00 [DBG] Key ring with default key {16b319a5-5e55-4f02-b657-b03f7f63dc68} was loaded during application startup.
+2026-05-10 11:05:05.396 -07:00 [DBG] Middleware loaded
+2026-05-10 11:05:05.400 -07:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16507 B).
+2026-05-10 11:05:05.402 -07:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2026-05-10 11:05:05.528 -07:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2026-05-10 11:05:05.534 -07:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-05-10 11:05:05.563 -07:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2026-05-10 11:05:05.765 -07:00 [INF] Now listening on: https://localhost:7097
+2026-05-10 11:05:05.782 -07:00 [INF] Now listening on: http://localhost:5227
+2026-05-10 11:05:05.785 -07:00 [DBG] Loaded hosting startup assembly ApiBook.Api
+2026-05-10 11:05:05.787 -07:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2026-05-10 11:05:05.789 -07:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2026-05-10 11:05:05.792 -07:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2026-05-10 11:05:05.821 -07:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2026-05-10 11:05:05.826 -07:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2026-05-10 11:05:06.390 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-10 11:05:06.392 -07:00 [INF] Hosting environment: Development
+2026-05-10 11:05:06.395 -07:00 [INF] Content root path: F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api
+2026-05-10 11:05:06.397 -07:00 [DBG] Hosting started
+2026-05-10 11:05:12.198 -07:00 [DBG] Connection id "0HNLENQN2D75T" accepted.
+2026-05-10 11:05:12.200 -07:00 [DBG] Connection id "0HNLENQN2D75T" started.
+2026-05-10 11:05:12.273 -07:00 [DBG] Connection 0HNLENQN2D75T established using the following protocol: "Tls12"
+2026-05-10 11:05:12.378 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7097/swagger/index.html - null null
+2026-05-10 11:05:12.577 -07:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2026-05-10 11:05:12.581 -07:00 [DBG] Request did not match any endpoints
+2026-05-10 11:05:12.696 -07:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2026-05-10 11:05:12.701 -07:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2026-05-10 11:05:12.761 -07:00 [DBG] Response markup was updated to include Browser Link script injection.
+2026-05-10 11:05:12.789 -07:00 [DBG] Response markup was updated to include browser refresh script injection.
+2026-05-10 11:05:12.802 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7097/swagger/index.html - 200 null text/html;charset=utf-8 426.8644ms
+2026-05-10 11:05:12.864 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7097/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-10 11:05:12.887 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7097/_vs/browserLink - null null
+2026-05-10 11:05:12.966 -07:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2026-05-10 11:05:12.970 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7097/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 106.0266ms
+2026-05-10 11:05:13.078 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7097/_vs/browserLink - 200 null text/javascript; charset=UTF-8 191.0555ms
+2026-05-10 11:05:13.717 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7097/swagger/v1/swagger.json - null null
+2026-05-10 11:05:13.730 -07:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2026-05-10 11:05:13.732 -07:00 [DBG] Request did not match any endpoints
+2026-05-10 11:05:13.769 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7097/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 51.8333ms
+2026-05-10 11:05:30.795 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7097/api/platforms - null null
+2026-05-10 11:05:30.811 -07:00 [DBG] 1 candidate(s) found for the request path '/api/platforms'
+2026-05-10 11:05:30.815 -07:00 [DBG] Endpoint 'ApiBook.Presentation.Controllers.PlatformsController.GetAll (ApiBook.Presentation)' with route pattern 'api/platforms' is valid for the request path '/api/platforms'
+2026-05-10 11:05:30.820 -07:00 [DBG] Request matched endpoint 'ApiBook.Presentation.Controllers.PlatformsController.GetAll (ApiBook.Presentation)'
+2026-05-10 11:05:30.827 -07:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2026-05-10 11:05:34.519 -07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-05-10 11:05:36.400 -07:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-05-10 11:05:36.453 -07:00 [DBG] Security audit: low risk.
+2026-05-10 11:05:36.462 -07:00 [INF] Executing endpoint 'ApiBook.Presentation.Controllers.PlatformsController.GetAll (ApiBook.Presentation)'
+2026-05-10 11:05:36.506 -07:00 [INF] Route matched with {action = "GetAll", controller = "Platforms"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller ApiBook.Presentation.Controllers.PlatformsController (ApiBook.Presentation).
+2026-05-10 11:05:36.512 -07:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-05-10 11:05:36.515 -07:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-05-10 11:05:36.518 -07:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-05-10 11:05:36.522 -07:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-05-10 11:05:36.527 -07:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-05-10 11:05:36.533 -07:00 [DBG] Executing controller factory for controller ApiBook.Presentation.Controllers.PlatformsController (ApiBook.Presentation)
+2026-05-10 11:05:36.537 -07:00 [DBG] Executed controller factory for controller ApiBook.Presentation.Controllers.PlatformsController (ApiBook.Presentation)
+2026-05-10 11:05:36.561 -07:00 [DBG] Attempting to bind parameter 'cancellationToken' of type 'System.Threading.CancellationToken' ...
+2026-05-10 11:05:36.567 -07:00 [DBG] Done attempting to bind parameter 'cancellationToken' of type 'System.Threading.CancellationToken'.
+2026-05-10 11:05:36.569 -07:00 [DBG] Attempting to validate the bound parameter 'cancellationToken' of type 'System.Threading.CancellationToken' ...
+2026-05-10 11:05:36.575 -07:00 [DBG] Done attempting to validate the bound parameter 'cancellationToken' of type 'System.Threading.CancellationToken'.
+2026-05-10 11:05:37.416 -07:00 [WRN] Entity 'Platform' has a global query filter defined and is the required end of a relationship with the entity 'Command'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-10 11:05:37.673 -07:00 [DBG] Entity Framework Core 9.0.1 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5' with options: None
+2026-05-10 11:05:37.779 -07:00 [DBG] Compiling query expression: 
+'DbSet<Platform>()
+    .AsNoTracking()
+    .OrderBy(x => x.Id)'
+2026-05-10 11:05:38.285 -07:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<Platform>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Platform.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Platform.CreatedAt (DateTime) Required, 1], [Property: Platform.IsDeleted (bool) Required, 2], [Property: Platform.Name (string) Required MaxLength(100), 3], [Property: Platform.Publisher (string) Required MaxLength(100), 4], [Property: Platform.UpdatedAt (DateTime?), 5] }
+        SELECT p.Id, p.CreatedAt, p.IsDeleted, p.Name, p.Publisher, p.UpdatedAt
+        FROM platforms AS p
+        WHERE Not(p.IsDeleted)
+        ORDER BY p.Id ASC) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Platform.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Platform.CreatedAt (DateTime) Required, 1], [Property: Platform.IsDeleted (bool) Required, 2], [Property: Platform.Name (string) Required MaxLength(100), 3], [Property: Platform.Publisher (string) Required MaxLength(100), 4], [Property: Platform.UpdatedAt (DateTime?), 5] }
+        SELECT p.Id, p.CreatedAt, p.IsDeleted, p.Name, p.Publisher, p.UpdatedAt
+        FROM platforms AS p
+        WHERE Not(p.IsDeleted)
+        ORDER BY p.Id ASC, 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        Platform entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            Platform instance1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(Platform);
+            (object)dataReader.GetInt32(0) != null ? 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: Platform | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("ApiBook.Domain.Entities.Platform")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: Platform | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("ApiBook.Domain.Entities.Platform")]: 
+                        {
+                            return 
+                            {
+                                Platform instance;
+                                instance = new Platform();
+                                instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                instance.<CreatedAt>k__BackingField = dataReader.GetDateTime(1);
+                                instance.<IsDeleted>k__BackingField = dataReader.GetBoolean(2);
+                                instance.<Name>k__BackingField = dataReader.GetString(3);
+                                instance.<Publisher>k__BackingField = dataReader.GetString(4);
+                                instance.<UpdatedAt>k__BackingField = dataReader.IsDBNull(5) ? default(DateTime?) : (DateTime?)dataReader.GetDateTime(5);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: NoTracking, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Platform | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("ApiBook.Domain.Entities.Platform")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Platform)
+                }
+                ;
+                return instance1;
+            } : 
+            {
+                object[] keyValues1;
+                keyValues1 = new object[]{ (object)dataReader.GetInt32(0) };
+                return ShapedQueryCompilingExpressionVisitor.CreateNullKeyValueInNoTrackingQuery(
+                    entityType: [LIFTABLE Constant: EntityType: Platform | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType("ApiBook.Domain.Entities.Platform")], 
+                    properties: [LIFTABLE Constant: List<RuntimeProperty> { Property: Platform.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd } | Resolver: c => c.Dependencies.Model.FindEntityType("ApiBook.Domain.Entities.Platform").FindPrimaryKey().Properties], 
+                    keyValues: keyValues1);
+            };
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: ApiBook.Infrastructure.Persistence.AppDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2026-05-10 11:05:38.357 -07:00 [DBG] Creating DbConnection.
+2026-05-10 11:05:38.441 -07:00 [DBG] Created DbConnection. (76ms).
+2026-05-10 11:05:38.450 -07:00 [DBG] Opening connection to database 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 11:05:38.748 -07:00 [DBG] Opened connection to database 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 11:05:38.758 -07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-05-10 11:05:38.798 -07:00 [DBG] Created DbCommand for 'ExecuteReader' (30ms).
+2026-05-10 11:05:38.803 -07:00 [DBG] Initialized DbCommand for 'ExecuteReader' (45ms).
+2026-05-10 11:05:38.818 -07:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."CreatedAt", p."IsDeleted", p."Name", p."Publisher", p."UpdatedAt"
+FROM platforms AS p
+WHERE NOT (p."IsDeleted")
+ORDER BY p."Id"
+2026-05-10 11:05:38.864 -07:00 [INF] Executed DbCommand (50ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."CreatedAt", p."IsDeleted", p."Name", p."Publisher", p."UpdatedAt"
+FROM platforms AS p
+WHERE NOT (p."IsDeleted")
+ORDER BY p."Id"
+2026-05-10 11:05:38.935 -07:00 [DBG] Closing data reader to 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 11:05:38.953 -07:00 [DBG] A data reader for 'apibook' on server 'tcp://localhost:5432' is being disposed after spending 77ms reading results.
+2026-05-10 11:05:38.963 -07:00 [DBG] Closing connection to database 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 11:05:38.969 -07:00 [DBG] Closed connection to database 'apibook' on server 'tcp://localhost:5432' (6ms).
+2026-05-10 11:05:38.978 -07:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-05-10 11:05:38.987 -07:00 [DBG] No information found on request to perform content negotiation.
+2026-05-10 11:05:38.988 -07:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2026-05-10 11:05:38.990 -07:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2026-05-10 11:05:38.992 -07:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2026-05-10 11:05:38.995 -07:00 [INF] Executing OkObjectResult, writing value of type 'ApiBook.Application.Common.ApiResponse`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-10 11:05:39.014 -07:00 [INF] Executed action ApiBook.Presentation.Controllers.PlatformsController.GetAll (ApiBook.Presentation) in 2478.6743ms
+2026-05-10 11:05:39.019 -07:00 [INF] Executed endpoint 'ApiBook.Presentation.Controllers.PlatformsController.GetAll (ApiBook.Presentation)'
+2026-05-10 11:05:39.025 -07:00 [INF] API /api/platforms responded 200 in 8191 ms
+2026-05-10 11:05:39.028 -07:00 [WRN] ⚠️ Slow API /api/platforms took 8191 ms
+2026-05-10 11:05:39.036 -07:00 [INF] HTTP GET /api/platforms responded 200 in 8200.7130 ms
+2026-05-10 11:05:39.055 -07:00 [DBG] 'AppDbContext' disposed.
+2026-05-10 11:05:39.067 -07:00 [DBG] Disposing connection to database 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 11:05:39.082 -07:00 [DBG] Disposed connection to database 'apibook' on server 'tcp://localhost:5432' (15ms).
+2026-05-10 11:05:39.092 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7097/api/platforms - 200 null application/json; charset=utf-8 8296.7447ms
+2026-05-10 11:07:02.738 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7097/api/platforms?x=%27%20OR%20%271%27=%271 - null null
+2026-05-10 11:07:02.895 -07:00 [DBG] 1 candidate(s) found for the request path '/api/platforms'
+2026-05-10 11:07:02.899 -07:00 [DBG] Endpoint 'ApiBook.Presentation.Controllers.PlatformsController.GetAll (ApiBook.Presentation)' with route pattern 'api/platforms' is valid for the request path '/api/platforms'
+2026-05-10 11:07:02.906 -07:00 [DBG] Request matched endpoint 'ApiBook.Presentation.Controllers.PlatformsController.GetAll (ApiBook.Presentation)'
+2026-05-10 11:07:02.910 -07:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2026-05-10 11:07:02.922 -07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-05-10 11:07:02.936 -07:00 [DBG] Security audit: low risk.
+2026-05-10 11:07:02.938 -07:00 [INF] Executing endpoint 'ApiBook.Presentation.Controllers.PlatformsController.GetAll (ApiBook.Presentation)'
+2026-05-10 11:07:02.940 -07:00 [INF] Route matched with {action = "GetAll", controller = "Platforms"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller ApiBook.Presentation.Controllers.PlatformsController (ApiBook.Presentation).
+2026-05-10 11:07:02.945 -07:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-05-10 11:07:02.948 -07:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-05-10 11:07:02.952 -07:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-05-10 11:07:02.956 -07:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-05-10 11:07:02.959 -07:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-05-10 11:07:02.962 -07:00 [DBG] Executing controller factory for controller ApiBook.Presentation.Controllers.PlatformsController (ApiBook.Presentation)
+2026-05-10 11:07:02.966 -07:00 [DBG] Executed controller factory for controller ApiBook.Presentation.Controllers.PlatformsController (ApiBook.Presentation)
+2026-05-10 11:07:02.980 -07:00 [DBG] Attempting to bind parameter 'cancellationToken' of type 'System.Threading.CancellationToken' ...
+2026-05-10 11:07:02.985 -07:00 [DBG] Done attempting to bind parameter 'cancellationToken' of type 'System.Threading.CancellationToken'.
+2026-05-10 11:07:02.988 -07:00 [DBG] Attempting to validate the bound parameter 'cancellationToken' of type 'System.Threading.CancellationToken' ...
+2026-05-10 11:07:03.603 -07:00 [DBG] Done attempting to validate the bound parameter 'cancellationToken' of type 'System.Threading.CancellationToken'.
+2026-05-10 11:07:03.810 -07:00 [DBG] Entity Framework Core 9.0.1 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5' with options: None
+2026-05-10 11:07:03.823 -07:00 [DBG] Creating DbConnection.
+2026-05-10 11:07:03.825 -07:00 [DBG] Created DbConnection. (2ms).
+2026-05-10 11:07:03.828 -07:00 [DBG] Opening connection to database 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 11:07:03.831 -07:00 [DBG] Opened connection to database 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 11:07:03.834 -07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-05-10 11:07:03.836 -07:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2026-05-10 11:07:03.842 -07:00 [DBG] Initialized DbCommand for 'ExecuteReader' (8ms).
+2026-05-10 11:07:03.846 -07:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."CreatedAt", p."IsDeleted", p."Name", p."Publisher", p."UpdatedAt"
+FROM platforms AS p
+WHERE NOT (p."IsDeleted")
+ORDER BY p."Id"
+2026-05-10 11:07:03.860 -07:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."CreatedAt", p."IsDeleted", p."Name", p."Publisher", p."UpdatedAt"
+FROM platforms AS p
+WHERE NOT (p."IsDeleted")
+ORDER BY p."Id"
+2026-05-10 11:07:03.866 -07:00 [DBG] Closing data reader to 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 11:07:03.868 -07:00 [DBG] A data reader for 'apibook' on server 'tcp://localhost:5432' is being disposed after spending 3ms reading results.
+2026-05-10 11:07:03.872 -07:00 [DBG] Closing connection to database 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 11:07:03.875 -07:00 [DBG] Closed connection to database 'apibook' on server 'tcp://localhost:5432' (2ms).
+2026-05-10 11:07:03.878 -07:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-05-10 11:07:03.886 -07:00 [DBG] No information found on request to perform content negotiation.
+2026-05-10 11:07:03.887 -07:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2026-05-10 11:07:03.894 -07:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2026-05-10 11:07:03.897 -07:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2026-05-10 11:07:03.900 -07:00 [INF] Executing OkObjectResult, writing value of type 'ApiBook.Application.Common.ApiResponse`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-10 11:07:03.905 -07:00 [INF] Executed action ApiBook.Presentation.Controllers.PlatformsController.GetAll (ApiBook.Presentation) in 942.6975ms
+2026-05-10 11:07:03.909 -07:00 [INF] Executed endpoint 'ApiBook.Presentation.Controllers.PlatformsController.GetAll (ApiBook.Presentation)'
+2026-05-10 11:07:03.915 -07:00 [INF] API /api/platforms responded 200 in 1002 ms
+2026-05-10 11:07:03.919 -07:00 [WRN] ⚠️ Slow API /api/platforms took 1002 ms
+2026-05-10 11:07:03.924 -07:00 [INF] HTTP GET /api/platforms responded 200 in 1012.1602 ms
+2026-05-10 11:07:03.932 -07:00 [DBG] 'AppDbContext' disposed.
+2026-05-10 11:07:03.935 -07:00 [DBG] Disposing connection to database 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 11:07:03.938 -07:00 [DBG] Disposed connection to database 'apibook' on server 'tcp://localhost:5432' (3ms).
+2026-05-10 11:07:03.941 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7097/api/platforms?x=%27%20OR%20%271%27=%271 - 200 null application/json; charset=utf-8 1203.5621ms
+2026-05-10 11:07:04.443 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7097/favicon.ico - null null
+2026-05-10 11:07:04.448 -07:00 [DBG] No candidates found for the request path '/favicon.ico'
+2026-05-10 11:07:04.455 -07:00 [DBG] Request did not match any endpoints
+2026-05-10 11:07:04.457 -07:00 [DBG] The request path  does not match the path filter
+2026-05-10 11:07:04.464 -07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-05-10 11:07:04.477 -07:00 [DBG] Security audit: low risk.
+2026-05-10 11:07:04.479 -07:00 [INF] API /favicon.ico responded 404 in 19 ms
+2026-05-10 11:07:04.483 -07:00 [INF] HTTP GET /favicon.ico responded 404 in 22.9677 ms
+2026-05-10 11:07:04.487 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7097/favicon.ico - 404 0 null 43.841ms
+2026-05-10 11:07:04.501 -07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7097/favicon.ico, Response status code: 404
+2026-05-10 11:12:26.426 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7097/api/platforms?x=%27%20OR%20%271%27=%271 - null null
+2026-05-10 11:12:26.483 -07:00 [DBG] 1 candidate(s) found for the request path '/api/platforms'
+2026-05-10 11:12:26.493 -07:00 [DBG] Endpoint 'ApiBook.Presentation.Controllers.PlatformsController.GetAll (ApiBook.Presentation)' with route pattern 'api/platforms' is valid for the request path '/api/platforms'
+2026-05-10 11:12:26.527 -07:00 [DBG] Request matched endpoint 'ApiBook.Presentation.Controllers.PlatformsController.GetAll (ApiBook.Presentation)'
+2026-05-10 11:12:26.532 -07:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2026-05-10 11:12:26.536 -07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-05-10 11:12:26.616 -07:00 [DBG] Security audit: low risk.
+2026-05-10 11:12:26.628 -07:00 [INF] Executing endpoint 'ApiBook.Presentation.Controllers.PlatformsController.GetAll (ApiBook.Presentation)'
+2026-05-10 11:12:26.633 -07:00 [INF] Route matched with {action = "GetAll", controller = "Platforms"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller ApiBook.Presentation.Controllers.PlatformsController (ApiBook.Presentation).
+2026-05-10 11:12:26.649 -07:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-05-10 11:12:26.652 -07:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-05-10 11:12:26.655 -07:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-05-10 11:12:26.658 -07:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-05-10 11:12:26.660 -07:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-05-10 11:12:26.666 -07:00 [DBG] Executing controller factory for controller ApiBook.Presentation.Controllers.PlatformsController (ApiBook.Presentation)
+2026-05-10 11:12:26.736 -07:00 [DBG] Executed controller factory for controller ApiBook.Presentation.Controllers.PlatformsController (ApiBook.Presentation)
+2026-05-10 11:12:26.744 -07:00 [DBG] Attempting to bind parameter 'cancellationToken' of type 'System.Threading.CancellationToken' ...
+2026-05-10 11:12:26.754 -07:00 [DBG] Done attempting to bind parameter 'cancellationToken' of type 'System.Threading.CancellationToken'.
+2026-05-10 11:12:26.756 -07:00 [DBG] Attempting to validate the bound parameter 'cancellationToken' of type 'System.Threading.CancellationToken' ...
+2026-05-10 11:12:26.761 -07:00 [DBG] Done attempting to validate the bound parameter 'cancellationToken' of type 'System.Threading.CancellationToken'.
+2026-05-10 11:12:26.974 -07:00 [DBG] Entity Framework Core 9.0.1 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5' with options: None
+2026-05-10 11:12:26.991 -07:00 [DBG] Creating DbConnection.
+2026-05-10 11:12:26.993 -07:00 [DBG] Created DbConnection. (1ms).
+2026-05-10 11:12:26.995 -07:00 [DBG] Opening connection to database 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 11:12:27.217 -07:00 [DBG] Opened connection to database 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 11:12:27.219 -07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-05-10 11:12:27.221 -07:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2026-05-10 11:12:27.222 -07:00 [DBG] Initialized DbCommand for 'ExecuteReader' (3ms).
+2026-05-10 11:12:27.225 -07:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."CreatedAt", p."IsDeleted", p."Name", p."Publisher", p."UpdatedAt"
+FROM platforms AS p
+WHERE NOT (p."IsDeleted")
+ORDER BY p."Id"
+2026-05-10 11:12:27.237 -07:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."CreatedAt", p."IsDeleted", p."Name", p."Publisher", p."UpdatedAt"
+FROM platforms AS p
+WHERE NOT (p."IsDeleted")
+ORDER BY p."Id"
+2026-05-10 11:12:27.241 -07:00 [DBG] Closing data reader to 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 11:12:27.243 -07:00 [DBG] A data reader for 'apibook' on server 'tcp://localhost:5432' is being disposed after spending 2ms reading results.
+2026-05-10 11:12:27.248 -07:00 [DBG] Closing connection to database 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 11:12:27.250 -07:00 [DBG] Closed connection to database 'apibook' on server 'tcp://localhost:5432' (2ms).
+2026-05-10 11:12:27.252 -07:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-05-10 11:12:27.256 -07:00 [DBG] No information found on request to perform content negotiation.
+2026-05-10 11:12:27.257 -07:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2026-05-10 11:12:27.258 -07:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2026-05-10 11:12:27.260 -07:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2026-05-10 11:12:27.262 -07:00 [INF] Executing OkObjectResult, writing value of type 'ApiBook.Application.Common.ApiResponse`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-10 11:12:27.265 -07:00 [INF] Executed action ApiBook.Presentation.Controllers.PlatformsController.GetAll (ApiBook.Presentation) in 599.0214ms
+2026-05-10 11:12:27.270 -07:00 [INF] Executed endpoint 'ApiBook.Presentation.Controllers.PlatformsController.GetAll (ApiBook.Presentation)'
+2026-05-10 11:12:27.273 -07:00 [INF] API /api/platforms responded 200 in 737 ms
+2026-05-10 11:12:27.277 -07:00 [WRN] ⚠️ Slow API /api/platforms took 737 ms
+2026-05-10 11:12:27.281 -07:00 [INF] HTTP GET /api/platforms responded 200 in 746.7206 ms
+2026-05-10 11:12:27.286 -07:00 [DBG] 'AppDbContext' disposed.
+2026-05-10 11:12:27.293 -07:00 [DBG] Disposing connection to database 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 11:12:27.299 -07:00 [DBG] Disposed connection to database 'apibook' on server 'tcp://localhost:5432' (6ms).
+2026-05-10 11:12:27.302 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7097/api/platforms?x=%27%20OR%20%271%27=%271 - 200 null application/json; charset=utf-8 882.3664ms
+2026-05-10 11:16:54.544 -07:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-05-10 11:16:54.784 -07:00 [DBG] Hosting starting
+2026-05-10 11:16:54.851 -07:00 [INF] User profile is available. Using 'C:\Users\Yoga 370\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-10 11:16:54.870 -07:00 [DBG] Reading data from file 'C:\Users\Yoga 370\AppData\Local\ASP.NET\DataProtection-Keys\key-07b448e9-04a3-4c29-bb41-3652cb1fe1db.xml'.
+2026-05-10 11:16:55.002 -07:00 [DBG] Reading data from file 'C:\Users\Yoga 370\AppData\Local\ASP.NET\DataProtection-Keys\key-0a85a8b0-2aba-420f-948f-6e479b4d5f65.xml'.
+2026-05-10 11:16:55.033 -07:00 [DBG] Reading data from file 'C:\Users\Yoga 370\AppData\Local\ASP.NET\DataProtection-Keys\key-16b319a5-5e55-4f02-b657-b03f7f63dc68.xml'.
+2026-05-10 11:16:55.038 -07:00 [DBG] Reading data from file 'C:\Users\Yoga 370\AppData\Local\ASP.NET\DataProtection-Keys\key-583f58f3-30d4-4814-ab02-829e43d9306b.xml'.
+2026-05-10 11:16:55.048 -07:00 [DBG] Found key {07b448e9-04a3-4c29-bb41-3652cb1fe1db}.
+2026-05-10 11:16:55.077 -07:00 [DBG] Found key {0a85a8b0-2aba-420f-948f-6e479b4d5f65}.
+2026-05-10 11:16:55.080 -07:00 [DBG] Found key {16b319a5-5e55-4f02-b657-b03f7f63dc68}.
+2026-05-10 11:16:55.082 -07:00 [DBG] Found key {583f58f3-30d4-4814-ab02-829e43d9306b}.
+2026-05-10 11:16:55.101 -07:00 [DBG] Considering key {16b319a5-5e55-4f02-b657-b03f7f63dc68} with expiration date 2026-07-30 15:39:16Z as default key.
+2026-05-10 11:16:55.120 -07:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-05-10 11:16:55.142 -07:00 [DBG] Decrypting secret element using Windows DPAPI.
+2026-05-10 11:16:55.150 -07:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-05-10 11:16:55.183 -07:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2026-05-10 11:16:55.191 -07:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2026-05-10 11:16:55.202 -07:00 [DBG] Using key {16b319a5-5e55-4f02-b657-b03f7f63dc68} as the default key.
+2026-05-10 11:16:55.208 -07:00 [DBG] Key ring with default key {16b319a5-5e55-4f02-b657-b03f7f63dc68} was loaded during application startup.
+2026-05-10 11:16:55.227 -07:00 [DBG] Middleware loaded
+2026-05-10 11:16:55.233 -07:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16507 B).
+2026-05-10 11:16:55.237 -07:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2026-05-10 11:16:55.415 -07:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2026-05-10 11:16:55.424 -07:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-05-10 11:16:55.459 -07:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2026-05-10 11:16:55.727 -07:00 [INF] Now listening on: https://localhost:7097
+2026-05-10 11:16:55.730 -07:00 [INF] Now listening on: http://localhost:5227
+2026-05-10 11:16:55.735 -07:00 [DBG] Loaded hosting startup assembly ApiBook.Api
+2026-05-10 11:16:55.739 -07:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2026-05-10 11:16:55.743 -07:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2026-05-10 11:16:55.747 -07:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2026-05-10 11:16:55.768 -07:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2026-05-10 11:16:55.774 -07:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2026-05-10 11:16:55.888 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-10 11:16:55.889 -07:00 [INF] Hosting environment: Development
+2026-05-10 11:16:55.893 -07:00 [INF] Content root path: F:\Window Work\Projects\Notes\.NET\.NET Course for Architectures\API Book .NET Project\src\ApiBook.Api
+2026-05-10 11:16:55.899 -07:00 [DBG] Hosting started
+2026-05-10 11:17:00.143 -07:00 [DBG] Connection id "0HNLEO1A1T1NC" accepted.
+2026-05-10 11:17:00.147 -07:00 [DBG] Connection id "0HNLEO1A1T1NC" started.
+2026-05-10 11:17:00.231 -07:00 [DBG] Connection 0HNLEO1A1T1NC established using the following protocol: "Tls12"
+2026-05-10 11:17:00.322 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7097/swagger/index.html - null null
+2026-05-10 11:17:00.535 -07:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2026-05-10 11:17:00.537 -07:00 [DBG] Request did not match any endpoints
+2026-05-10 11:17:00.594 -07:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2026-05-10 11:17:00.598 -07:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2026-05-10 11:17:00.669 -07:00 [DBG] Response markup was updated to include Browser Link script injection.
+2026-05-10 11:17:00.675 -07:00 [DBG] Response markup was updated to include browser refresh script injection.
+2026-05-10 11:17:00.685 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7097/swagger/index.html - 200 null text/html;charset=utf-8 372.0365ms
+2026-05-10 11:17:00.785 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7097/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-10 11:17:00.788 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7097/_vs/browserLink - null null
+2026-05-10 11:17:00.932 -07:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2026-05-10 11:17:00.952 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7097/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 166.4588ms
+2026-05-10 11:17:01.061 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7097/_vs/browserLink - 200 null text/javascript; charset=UTF-8 273.1572ms
+2026-05-10 11:17:01.513 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7097/swagger/v1/swagger.json - null null
+2026-05-10 11:17:01.526 -07:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2026-05-10 11:17:01.600 -07:00 [DBG] Request did not match any endpoints
+2026-05-10 11:17:01.638 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7097/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 124.1941ms
+2026-05-10 11:17:05.765 -07:00 [INF] Request starting HTTP/2 GET https://localhost:7097/api/platforms?x=%27%20OR%20%271%27=%271 - null null
+2026-05-10 11:17:05.785 -07:00 [DBG] 1 candidate(s) found for the request path '/api/platforms'
+2026-05-10 11:17:05.788 -07:00 [DBG] Endpoint 'ApiBook.Presentation.Controllers.PlatformsController.GetAll (ApiBook.Presentation)' with route pattern 'api/platforms' is valid for the request path '/api/platforms'
+2026-05-10 11:17:05.796 -07:00 [DBG] Request matched endpoint 'ApiBook.Presentation.Controllers.PlatformsController.GetAll (ApiBook.Presentation)'
+2026-05-10 11:17:05.810 -07:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2026-05-10 11:17:08.768 -07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-05-10 11:17:10.684 -07:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-05-10 11:17:10.750 -07:00 [WRN] Security audit: medium risk — review recommended.
+2026-05-10 11:17:11.604 -07:00 [WRN] Entity 'Platform' has a global query filter defined and is the required end of a relationship with the entity 'Command'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-10 11:17:11.826 -07:00 [DBG] Entity Framework Core 9.0.1 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.4+fd2380957bee5cd86f336466af36b08c0163f1a5' with options: None
+2026-05-10 11:17:11.927 -07:00 [DBG] 'AppDbContext' generated a temporary value for the property 'SecurityAuditLog.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-05-10 11:17:12.079 -07:00 [DBG] Context 'AppDbContext' started tracking 'SecurityAuditLog' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-05-10 11:17:12.091 -07:00 [DBG] DetectChanges starting for 'AppDbContext'.
+2026-05-10 11:17:12.136 -07:00 [DBG] DetectChanges completed for 'AppDbContext'.
+2026-05-10 11:17:12.143 -07:00 [DBG] SaveChanges starting for 'AppDbContext'.
+2026-05-10 11:17:12.146 -07:00 [DBG] DetectChanges starting for 'AppDbContext'.
+2026-05-10 11:17:12.148 -07:00 [DBG] DetectChanges completed for 'AppDbContext'.
+2026-05-10 11:17:12.302 -07:00 [DBG] Creating DbConnection.
+2026-05-10 11:17:12.363 -07:00 [DBG] Created DbConnection. (58ms).
+2026-05-10 11:17:12.370 -07:00 [DBG] Opening connection to database 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 11:17:12.628 -07:00 [DBG] Opened connection to database 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 11:17:12.639 -07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-05-10 11:17:12.649 -07:00 [DBG] Created DbCommand for 'ExecuteReader' (6ms).
+2026-05-10 11:17:12.664 -07:00 [DBG] Initialized DbCommand for 'ExecuteReader' (24ms).
+2026-05-10 11:17:12.680 -07:00 [DBG] Executing DbCommand [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?' (DbType = DateTime), @p5='?', @p6='?', @p7='?' (DbType = Int32), @p8='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO security_audit_logs ("HttpMethod", "Path", "QueryString", "ReasonsSummary", "RecordedAtUtc", "RemoteIp", "RiskLevel", "RiskScore", "UserAgent")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+RETURNING "Id";
+2026-05-10 11:17:12.814 -07:00 [INF] Executed DbCommand (140ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?', @p4='?' (DbType = DateTime), @p5='?', @p6='?', @p7='?' (DbType = Int32), @p8='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO security_audit_logs ("HttpMethod", "Path", "QueryString", "ReasonsSummary", "RecordedAtUtc", "RemoteIp", "RiskLevel", "RiskScore", "UserAgent")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+RETURNING "Id";
+2026-05-10 11:17:12.849 -07:00 [DBG] The foreign key property 'SecurityAuditLog.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2026-05-10 11:17:12.864 -07:00 [DBG] Closing data reader to 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 11:17:12.875 -07:00 [DBG] A data reader for 'apibook' on server 'tcp://localhost:5432' is being disposed after spending 41ms reading results.
+2026-05-10 11:17:12.889 -07:00 [DBG] Closing connection to database 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 11:17:12.897 -07:00 [DBG] Closed connection to database 'apibook' on server 'tcp://localhost:5432' (7ms).
+2026-05-10 11:17:12.915 -07:00 [DBG] An entity of type 'SecurityAuditLog' tracked by 'AppDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-05-10 11:17:12.922 -07:00 [DBG] SaveChanges completed for 'AppDbContext' with 1 entities written to the database.
+2026-05-10 11:17:12.934 -07:00 [INF] Executing endpoint 'ApiBook.Presentation.Controllers.PlatformsController.GetAll (ApiBook.Presentation)'
+2026-05-10 11:17:12.966 -07:00 [INF] Route matched with {action = "GetAll", controller = "Platforms"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller ApiBook.Presentation.Controllers.PlatformsController (ApiBook.Presentation).
+2026-05-10 11:17:12.981 -07:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-05-10 11:17:12.986 -07:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-05-10 11:17:12.992 -07:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-05-10 11:17:13.003 -07:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-05-10 11:17:13.009 -07:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-05-10 11:17:13.019 -07:00 [DBG] Executing controller factory for controller ApiBook.Presentation.Controllers.PlatformsController (ApiBook.Presentation)
+2026-05-10 11:17:13.024 -07:00 [DBG] Executed controller factory for controller ApiBook.Presentation.Controllers.PlatformsController (ApiBook.Presentation)
+2026-05-10 11:17:13.056 -07:00 [DBG] Attempting to bind parameter 'cancellationToken' of type 'System.Threading.CancellationToken' ...
+2026-05-10 11:17:13.062 -07:00 [DBG] Done attempting to bind parameter 'cancellationToken' of type 'System.Threading.CancellationToken'.
+2026-05-10 11:17:13.065 -07:00 [DBG] Attempting to validate the bound parameter 'cancellationToken' of type 'System.Threading.CancellationToken' ...
+2026-05-10 11:17:13.074 -07:00 [DBG] Done attempting to validate the bound parameter 'cancellationToken' of type 'System.Threading.CancellationToken'.
+2026-05-10 11:17:13.164 -07:00 [DBG] Compiling query expression: 
+'DbSet<Platform>()
+    .AsNoTracking()
+    .OrderBy(x => x.Id)'
+2026-05-10 11:17:13.521 -07:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<Platform>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Platform.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Platform.CreatedAt (DateTime) Required, 1], [Property: Platform.IsDeleted (bool) Required, 2], [Property: Platform.Name (string) Required MaxLength(100), 3], [Property: Platform.Publisher (string) Required MaxLength(100), 4], [Property: Platform.UpdatedAt (DateTime?), 5] }
+        SELECT p.Id, p.CreatedAt, p.IsDeleted, p.Name, p.Publisher, p.UpdatedAt
+        FROM platforms AS p
+        WHERE Not(p.IsDeleted)
+        ORDER BY p.Id ASC) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Platform.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Platform.CreatedAt (DateTime) Required, 1], [Property: Platform.IsDeleted (bool) Required, 2], [Property: Platform.Name (string) Required MaxLength(100), 3], [Property: Platform.Publisher (string) Required MaxLength(100), 4], [Property: Platform.UpdatedAt (DateTime?), 5] }
+        SELECT p.Id, p.CreatedAt, p.IsDeleted, p.Name, p.Publisher, p.UpdatedAt
+        FROM platforms AS p
+        WHERE Not(p.IsDeleted)
+        ORDER BY p.Id ASC, 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        Platform entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            Platform instance1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(Platform);
+            (object)dataReader.GetInt32(0) != null ? 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: Platform | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("ApiBook.Domain.Entities.Platform")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: Platform | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("ApiBook.Domain.Entities.Platform")]: 
+                        {
+                            return 
+                            {
+                                Platform instance;
+                                instance = new Platform();
+                                instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                instance.<CreatedAt>k__BackingField = dataReader.GetDateTime(1);
+                                instance.<IsDeleted>k__BackingField = dataReader.GetBoolean(2);
+                                instance.<Name>k__BackingField = dataReader.GetString(3);
+                                instance.<Publisher>k__BackingField = dataReader.GetString(4);
+                                instance.<UpdatedAt>k__BackingField = dataReader.IsDBNull(5) ? default(DateTime?) : (DateTime?)dataReader.GetDateTime(5);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: NoTracking, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Platform | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("ApiBook.Domain.Entities.Platform")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Platform)
+                }
+                ;
+                return instance1;
+            } : 
+            {
+                object[] keyValues1;
+                keyValues1 = new object[]{ (object)dataReader.GetInt32(0) };
+                return ShapedQueryCompilingExpressionVisitor.CreateNullKeyValueInNoTrackingQuery(
+                    entityType: [LIFTABLE Constant: EntityType: Platform | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType("ApiBook.Domain.Entities.Platform")], 
+                    properties: [LIFTABLE Constant: List<RuntimeProperty> { Property: Platform.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd } | Resolver: c => c.Dependencies.Model.FindEntityType("ApiBook.Domain.Entities.Platform").FindPrimaryKey().Properties], 
+                    keyValues: keyValues1);
+            };
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: ApiBook.Infrastructure.Persistence.AppDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2026-05-10 11:17:13.668 -07:00 [DBG] Opening connection to database 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 11:17:13.672 -07:00 [DBG] Opened connection to database 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 11:17:13.678 -07:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-05-10 11:17:13.681 -07:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2026-05-10 11:17:13.684 -07:00 [DBG] Initialized DbCommand for 'ExecuteReader' (6ms).
+2026-05-10 11:17:13.688 -07:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."CreatedAt", p."IsDeleted", p."Name", p."Publisher", p."UpdatedAt"
+FROM platforms AS p
+WHERE NOT (p."IsDeleted")
+ORDER BY p."Id"
+2026-05-10 11:17:13.710 -07:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."CreatedAt", p."IsDeleted", p."Name", p."Publisher", p."UpdatedAt"
+FROM platforms AS p
+WHERE NOT (p."IsDeleted")
+ORDER BY p."Id"
+2026-05-10 11:17:13.745 -07:00 [DBG] Closing data reader to 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 11:17:13.750 -07:00 [DBG] A data reader for 'apibook' on server 'tcp://localhost:5432' is being disposed after spending 21ms reading results.
+2026-05-10 11:17:13.760 -07:00 [DBG] Closing connection to database 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 11:17:13.764 -07:00 [DBG] Closed connection to database 'apibook' on server 'tcp://localhost:5432' (4ms).
+2026-05-10 11:17:13.784 -07:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-05-10 11:17:13.803 -07:00 [DBG] No information found on request to perform content negotiation.
+2026-05-10 11:17:13.805 -07:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2026-05-10 11:17:13.812 -07:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2026-05-10 11:17:13.819 -07:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2026-05-10 11:17:13.825 -07:00 [INF] Executing OkObjectResult, writing value of type 'ApiBook.Application.Common.ApiResponse`1[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-10 11:17:13.862 -07:00 [INF] Executed action ApiBook.Presentation.Controllers.PlatformsController.GetAll (ApiBook.Presentation) in 838.6412ms
+2026-05-10 11:17:13.868 -07:00 [INF] Executed endpoint 'ApiBook.Presentation.Controllers.PlatformsController.GetAll (ApiBook.Presentation)'
+2026-05-10 11:17:13.891 -07:00 [INF] API /api/platforms responded 200 in 8052 ms
+2026-05-10 11:17:13.908 -07:00 [WRN] ⚠️ Slow API /api/platforms took 8052 ms
+2026-05-10 11:17:13.919 -07:00 [INF] HTTP GET /api/platforms responded 200 in 8094.7879 ms
+2026-05-10 11:17:13.933 -07:00 [DBG] 'AppDbContext' disposed.
+2026-05-10 11:17:13.945 -07:00 [DBG] Disposing connection to database 'apibook' on server 'tcp://localhost:5432'.
+2026-05-10 11:17:13.952 -07:00 [DBG] Disposed connection to database 'apibook' on server 'tcp://localhost:5432' (6ms).
+2026-05-10 11:17:13.956 -07:00 [INF] Request finished HTTP/2 GET https://localhost:7097/api/platforms?x=%27%20OR%20%271%27=%271 - 200 null application/json; charset=utf-8 8191.2218ms

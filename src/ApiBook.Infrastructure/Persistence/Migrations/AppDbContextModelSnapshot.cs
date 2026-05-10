@@ -82,6 +82,61 @@ namespace ApiBook.Infrastructure.Persistence.Migrations
                     b.ToTable("platforms", (string)null);
                 });
 
+            modelBuilder.Entity("ApiBook.Domain.Entities.SecurityAuditLog", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
+
+                    b.Property<string>("HttpMethod")
+                        .IsRequired()
+                        .HasMaxLength(16)
+                        .HasColumnType("character varying(16)");
+
+                    b.Property<string>("Path")
+                        .IsRequired()
+                        .HasMaxLength(2048)
+                        .HasColumnType("character varying(2048)");
+
+                    b.Property<string>("QueryString")
+                        .HasMaxLength(4000)
+                        .HasColumnType("character varying(4000)");
+
+                    b.Property<string>("ReasonsSummary")
+                        .IsRequired()
+                        .HasMaxLength(8000)
+                        .HasColumnType("character varying(8000)");
+
+                    b.Property<DateTime>("RecordedAtUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("RemoteIp")
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.Property<string>("RiskLevel")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("character varying(20)");
+
+                    b.Property<int>("RiskScore")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("UserAgent")
+                        .HasMaxLength(500)
+                        .HasColumnType("character varying(500)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RecordedAtUtc");
+
+                    b.HasIndex("RiskScore");
+
+                    b.ToTable("security_audit_logs", (string)null);
+                });
+
             modelBuilder.Entity("ApiBook.Domain.Entities.Command", b =>
                 {
                     b.HasOne("ApiBook.Domain.Entities.Platform", "Platform")

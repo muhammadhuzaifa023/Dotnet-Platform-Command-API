@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "ApiBook.Presentation.Controllers.AgentController",
+    "Method": "RecommendCommands",
+    "RelativePath": "api/agent/commands/recommend",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ApiBook.Application.DTOs.AgentRecommendRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ApiBook.Presentation.Controllers.AuthController",
     "Method": "IssueToken",
     "RelativePath": "api/auth/token",

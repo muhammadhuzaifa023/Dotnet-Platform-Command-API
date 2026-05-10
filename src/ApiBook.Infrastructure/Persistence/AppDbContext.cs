@@ -8,6 +8,7 @@ public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(op
 {
     public DbSet<Platform> Platforms => Set<Platform>();
     public DbSet<Command> Commands => Set<Command>();
+    public DbSet<SecurityAuditLog> SecurityAuditLogs => Set<SecurityAuditLog>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -50,6 +51,33 @@ public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(op
                 .WithMany(p => p.Commands)
                 .HasForeignKey(x => x.PlatformId)
                 .OnDelete(DeleteBehavior.Cascade);
+        });
+
+        modelBuilder.Entity<SecurityAuditLog>(entity =>
+        {
+            entity.ToTable("security_audit_logs");
+            entity.HasKey(x => x.Id);
+
+            entity.Property(x => x.RiskLevel)
+                .HasMaxLength(20)
+                .IsRequired();
+
+            entity.Property(x => x.HttpMethod)
+                .HasMaxLength(16)
+                .IsRequired();
+
+            entity.Property(x => x.Path)
+                .HasMaxLength(2048)
+                .IsRequired();
+
+            entity.Property(x => x.QueryString).HasMaxLength(4000);
+            entity.Property(x => x.RemoteIp).HasMaxLength(100);
+            entity.Property(x => x.UserAgent).HasMaxLength(500);
+            entity.Property(x => x.ReasonsSummary).HasMaxLength(8000).IsRequired();
+            entity.Property(x => x.RecordedAtUtc).IsRequired();
+
+            entity.HasIndex(x => x.RecordedAtUtc);
+            entity.HasIndex(x => x.RiskScore);
         });
 
         base.OnModelCreating(modelBuilder);
